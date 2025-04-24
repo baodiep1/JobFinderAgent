@@ -1,13 +1,13 @@
 {
   "search_metadata": {
-    "id": "680a2016339288b8806cd287",
+    "id": "680a53a08f6625f78740f029",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dbb8cdeb773ac96e/680a2016339288b8806cd287.json",
-    "created_at": "2025-04-24 11:27:18 UTC",
-    "processed_at": "2025-04-24 11:27:18 UTC",
+    "json_endpoint": "https://serpapi.com/searches/bbdc958ae5c30769/680a53a08f6625f78740f029.json",
+    "created_at": "2025-04-24 15:07:12 UTC",
+    "processed_at": "2025-04-24 15:07:12 UTC",
     "google_url": "https://www.google.com/search?q=Software+Engineer+Remote&oq=Software+Engineer+Remote&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&sourceid=chrome&ie=UTF-8",
-    "raw_html_file": "https://serpapi.com/searches/dbb8cdeb773ac96e/680a2016339288b8806cd287.html",
-    "total_time_taken": 1.21
+    "raw_html_file": "https://serpapi.com/searches/bbdc958ae5c30769/680a53a08f6625f78740f029.html",
+    "total_time_taken": 1.28
   },
   "search_parameters": {
     "engine": "google",
@@ -19,8 +19,8 @@
   },
   "search_information": {
     "query_displayed": "Software Engineer Remote",
-    "total_results": 229000000,
-    "time_taken_displayed": 0.27,
+    "total_results": 250000000,
+    "time_taken_displayed": 0.36,
     "organic_results_state": "Results for exact spelling",
     "results_for": "United States"
   },
@@ -28,25 +28,25 @@
     "jobs": [
       {
         "title": "Software Engineer II (Remote)",
-        "link": "https://www.google.com/search?uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&q=Software+Engineer+Remote&sourceid=chrome&udm=8#vhid=vt%3D20/docid%3DiUFw0r-5yjJHuTs9AAAAAA%3D%3D&vssid=jobs-detail-viewer",
+        "link": "https://www.google.com/search?q=Software+Engineer+Remote&ie=UTF-8&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&oq=Software+Engineer+Remote&udm=8#vhid=vt%3D20/docid%3DiUFw0r-5yjJHuTs9AAAAAA%3D%3D&vssid=jobs-detail-viewer",
         "company_name": "The Home Depot",
         "location": "Anywhere",
         "via": "via The Home Depot Careers",
         "extensions": [
-          "15 days ago",
+          "16 days ago",
           "Work from home",
           "Full-time"
         ],
         "detected_extensions": {
-          "posted_at": "15 days ago",
+          "posted_at": "16 days ago",
           "schedule_type": "Full-time",
           "work_from_home": true
         },
-        "thumbnail": "https://serpapi.com/searches/680a2016339288b8806cd287/images/ee2e9def81004690e0883aa8598ddc3b9bccf62c459e4a1d51f391af9c7543fb.png"
+        "thumbnail": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/ee2e9def81004690e0883aa8598ddc3b9bccf62c459e4a1d51f391af9c7543fb.png"
       },
       {
         "title": "Software Engineer II - Mobile iOS (REMOTE)",
-        "link": "https://www.google.com/search?uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&q=Software+Engineer+Remote&sourceid=chrome&udm=8#vhid=vt%3D20/docid%3DmE59q8N3zP3SiIZTAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+        "link": "https://www.google.com/search?q=Software+Engineer+Remote&ie=UTF-8&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&oq=Software+Engineer+Remote&udm=8#vhid=vt%3D20/docid%3DmE59q8N3zP3SiIZTAAAAAA%3D%3D&vssid=jobs-detail-viewer",
         "company_name": "DICK'S Sporting Goods",
         "location": "Anywhere",
         "via": "via Dick's Sporting Goods Jobs",
@@ -58,11 +58,11 @@
           "schedule_type": "Full-time",
           "work_from_home": true
         },
-        "thumbnail": "https://serpapi.com/searches/680a2016339288b8806cd287/images/ee2e9def81004690e0883aa8598ddc3b5b04d61b070867cdecbaac1a6a14e47a.png"
+        "thumbnail": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/ee2e9def81004690e0883aa8598ddc3b5b04d61b070867cdecbaac1a6a14e47a.png"
       },
       {
         "title": "Senior Software Engineer (100% Remote)",
-        "link": "https://www.google.com/search?uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&q=Software+Engineer+Remote&sourceid=chrome&udm=8#vhid=vt%3D20/docid%3D5PhbTZBDmtdCuCK_AAAAAA%3D%3D&vssid=jobs-detail-viewer",
+        "link": "https://www.google.com/search?q=Software+Engineer+Remote&ie=UTF-8&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&oq=Software+Engineer+Remote&udm=8#vhid=vt%3D20/docid%3D5PhbTZBDmtdCuCK_AAAAAA%3D%3D&vssid=jobs-detail-viewer",
         "company_name": "CloudSpot",
         "location": "Anywhere",
         "via": "via Indeed",
@@ -71,16 +71,16 @@
           "Work from home",
           "Full-time",
           "No degree mentioned",
-          "Paid time off",
-          "Health insurance"
+          "Health insurance",
+          "Paid time off"
         ],
         "detected_extensions": {
           "posted_at": "24 days ago",
           "schedule_type": "Full-time",
           "work_from_home": true,
           "no_degree_mentioned": true,
-          "paid_time_off": true,
-          "health_insurance": true
+          "health_insurance": true,
+          "paid_time_off": true
         }
       }
     ]
@@ -90,28 +90,14 @@
   },
   "related_questions": [
     {
-      "question": "Can I work remotely as a software engineer?",
-      "snippet": null,
-      "title": "AI Overview",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Technology+enables+it&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ4eYNegUIoQEQAw",
-      "list": [
-        "Technology enables it: . Opens in new tabCollaboration tools like Slack, Zoom, and platforms like GitHub facilitate communication and project management from anywhere.\u00a0 ",
-        "Industry trend: . Opens in new tabMany companies have embraced remote work after the COVID-19 pandemic, with some even becoming fully remote, according to ScienceSoft.\u00a0 ",
-        "Benefits for employees: . Opens in new tabRemote work offers flexibility, work-life balance, and potentially a wider range of career options.\u00a0 ",
-        "Benefits for employers: . Opens in new tabRemote hiring expands the talent pool and can reduce overhead costs.\u00a0 ",
-        "Different levels of remote work: . Opens in new tabSome companies offer hybrid models (combining remote and in-office work), while others are fully remote.\u00a0 ",
-        "Job boards: Platforms like FlexJobs, Crossover for work, and others specialize in remote job listings.\u00a0 ",
-        "Company websites: Check the careers pages of companies you're interested in, as they may announce remote positions.\u00a0 ",
-        "Networking: Connect with other software engineers and recruiters on platforms like LinkedIn.\u00a0 ",
-        "Consider hybrid or fully remote roles: Many companies offer a mix of remote and in-office work, or fully remote positions.\u00a0 ",
-        "Be prepared for a shift in communication: Remote work often relies on text-based communication and virtual meetings.\u00a0 ",
-        "Company culture: Research the company's culture and how they support remote work.\u00a0 ",
-        "Your personal needs: Evaluate whether remote work suits your personality, work style, and lifestyle.\u00a0 ",
-        "Required skills and experience: Different remote roles have varying skill requirements, so tailor your resume and portfolio accordingly.\u00a0 "
-      ],
-      "displayed_link": null,
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJDYW4gSSB3b3JrIHJlbW90ZWx5IGFzIGEgc29mdHdhcmUgZW5naW5lZXI/IiwibGsiOiJHaXBqWVc0Z2FTQjNiM0pySUhKbGJXOTBaV3g1SUdGeklHRWdjMjltZEhkaGNtVWdaVzVuYVc1bFpYSSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0=",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJDYW4gSSB3b3JrIHJlbW90ZWx5IGFzIGEgc29mdHdhcmUgZW5naW5lZXI%2FIiwibGsiOiJHaXBqWVc0Z2FTQjNiM0pySUhKbGJXOTBaV3g1SUdGeklHRWdjMjltZEhkaGNtVWdaVzVuYVc1bFpYSSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0%3D"
+      "question": "Are there still remote software engineer jobs?",
+      "snippet": "If you're an experienced software engineer, there's a wide range of full-time remote work opportunities you can take advantage of to gain the freedom\u2014and income\u2014you're looking for.",
+      "title": "10 Best Remote Software Engineering Tech Jobs - Crossover",
+      "link": "https://www.crossover.com/resources/10-remote-software-engineering-jobs#:~:text=If%20you're%20an%20experienced,%E2%80%94you're%20looking%20for.",
+      "displayed_link": "https://www.crossover.com \u203a resources \u203a 10-remote-soft...",
+      "source_logo": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/d63cc1755e991f341d950550a464df4a3b58ea6a908101e7138f8f889fae8db8.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJBcmUgdGhlcmUgc3RpbGwgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIGpvYnM/IiwibGsiOiJjNVBTVFN4S1ZTakpTQVdTeFNXWk9Ua0tSYW01LVNWQVRuNWFTVGxJTGpVdlBUTXZOYlZJSVNzX3FSZ0EiLCJicyI6ImMtTks0ZEp6TEVwVktNbElCWkxGSlprNU9RcEZxYm41SlVCT2ZscEplU0pRTkRVdlBUTXZOYlZJSVNzX3FkaGU0bFdja2I2VWJpSXBtcmdTdVhTZEVfTVVLdk5MRlhJVHMxTVZWRXdOREhRTURBd1VFb3NWRWpFMTJVdk1GakhTbGRKT1J0ZURXd3RYQ0pjYXlBcFBoYVJVYlBKUUItWlUya3NzTWpOU2wxSUZtWjFKU0RFWE1IZzg4c3NWY2t1VE14UlM4bE5CVnVQMEtjaVY5aEtUazBEQmswR0tKZ0ZHQUEiLCJpZCI6ImZjX29WTUthTm5FR1pLNHdQQVBtWlBueUFvXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJBcmUgdGhlcmUgc3RpbGwgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIGpvYnM%2FIiwibGsiOiJjNVBTVFN4S1ZTakpTQVdTeFNXWk9Ua0tSYW01LVNWQVRuNWFTVGxJTGpVdlBUTXZOYlZJSVNzX3FSZ0EiLCJicyI6ImMtTks0ZEp6TEVwVktNbElCWkxGSlprNU9RcEZxYm41SlVCT2ZscEplU0pRTkRVdlBUTXZOYlZJSVNzX3FkaGU0bFdja2I2VWJpSXBtcmdTdVhTZEVfTVVLdk5MRlhJVHMxTVZWRXdOREhRTURBd1VFb3NWRWpFMTJVdk1GakhTbGRKT1J0ZURXd3RYQ0pjYXlBcFBoYVJVYlBKUUItWlUya3NzTWpOU2wxSUZtWjFKU0RFWE1IZzg4c3NWY2t1VE14UlM4bE5CVnVQMEtjaVY5aEtUazBEQmswR0tKZ0ZHQUEiLCJpZCI6ImZjX29WTUthTm5FR1pLNHdQQVBtWlBueUFvXzUifQ%3D%3D"
     },
     {
       "question": "Can you make $500,000 as a software engineer?",
@@ -120,29 +106,30 @@
       "date": "Mar 18, 2017",
       "link": "https://www.quora.com/Can-a-software-engineer-make-500k",
       "displayed_link": "https://www.quora.com \u203a Can-a-software-engineer-make...",
-      "source_logo": null,
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJDYW4geW91IG1ha2UgJDUwMCwwMDAgYXMgYSBzb2Z0d2FyZSBlbmdpbmVlcj8iLCJsayI6ImM1UFNUazdNVTZqTUwxWElUY3hPVlZBeE5RQUJoY1JpaFVTRjR2eTBrdkxFb2xTRjFMejB6THpVMUNJQSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0=",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJDYW4geW91IG1ha2UgJDUwMCwwMDAgYXMgYSBzb2Z0d2FyZSBlbmdpbmVlcj8iLCJsayI6ImM1UFNUazdNVTZqTUwxWElUY3hPVlZBeE5RQUJoY1JpaFVTRjR2eTBrdkxFb2xTRjFMejB6THpVMUNJQSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0%3D"
+      "source_logo": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/d63cc1755e991f341d950550a464df4a2c968976cf5c9bc3d8741f08b957ac15.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJDYW4geW91IG1ha2UgJDUwMCwwMDAgYXMgYSBzb2Z0d2FyZSBlbmdpbmVlcj8iLCJsayI6ImM1UFNUazdNVTZqTUwxWElUY3hPVlZBeE5RQUJoY1JpaFVTRjR2eTBrdkxFb2xTRjFMejB6THpVMUNJQSIsImJzIjoiYy1OSzRkSnpMRXBWS01sSUJaTEZKWms1T1FwRnFibjVKVUJPZmxwSmVTSlFORFV2UFRNdk5iVklJU3NfcWRoZTRsV2NrYjZVYmlJcG1yZ1N1WFNkRV9NVUt2TkxGWElUczFNVlZFd05ESFFNREF3VUVvc1ZFakUxMlV2TUZqSFNsZEpPUnRlRFd3dFhDSmNheUFwUGhhUlViUEpRQi1aVTJrc3NNak5TbDFJRm1aMUpTREVYTUhnODhzc1Zja3VUTXhSUzhsTkJWdVAwS2NpVjloS1RrMERCazBHS0pnRkdBQSIsImlkIjoiZmNfb1ZNS2FObkVHWks0d1BBUG1aUG55QW9fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJDYW4geW91IG1ha2UgJDUwMCwwMDAgYXMgYSBzb2Z0d2FyZSBlbmdpbmVlcj8iLCJsayI6ImM1UFNUazdNVTZqTUwxWElUY3hPVlZBeE5RQUJoY1JpaFVTRjR2eTBrdkxFb2xTRjFMejB6THpVMUNJQSIsImJzIjoiYy1OSzRkSnpMRXBWS01sSUJaTEZKWms1T1FwRnFibjVKVUJPZmxwSmVTSlFORFV2UFRNdk5iVklJU3NfcWRoZTRsV2NrYjZVYmlJcG1yZ1N1WFNkRV9NVUt2TkxGWElUczFNVlZFd05ESFFNREF3VUVvc1ZFakUxMlV2TUZqSFNsZEpPUnRlRFd3dFhDSmNheUFwUGhhUlViUEpRQi1aVTJrc3NNak5TbDFJRm1aMUpTREVYTUhnODhzc1Zja3VUTXhSUzhsTkJWdVAwS2NpVjloS1RrMERCazBHS0pnRkdBQSIsImlkIjoiZmNfb1ZNS2FObkVHWks0d1BBUG1aUG55QW9fNSJ9"
     },
     {
-      "question": "What is the 40/20/40 rule of thumb in software engineering?",
-      "snippet": "The 40-20-40 rule applies to software engineering application development. The rule states that 40% of the work is performed during feasibility, analysis, and design; 20% is during coding; and the remaining 40% is during testing (see Figure 18-3).",
-      "title": "Change Management | Saylor Academy",
-      "link": "https://learn.saylor.org/mod/book/tool/print/index.php?id=72330&chapterid=67282#:~:text=The%2040%2D20%2D40%20rule,see%20Figure%2018%2D3).",
-      "displayed_link": "https://learn.saylor.org \u203a mod \u203a book \u203a tool \u203a print",
-      "source_logo": "https://serpapi.com/searches/680a2016339288b8806cd287/images/d63cc1755e991f341d950550a464df4ae02b0315deda783d23e576c1b1281817.png",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSA0MC8yMC80MCBydWxlIG9mIHRodW1iIGluIHNvZnR3YXJlIGVuZ2luZWVyaW5nPyIsImxrIjoiYzVPeUtzOUlMRkhJTEZZb3lVaFZNREZRTURJQWtVV2xPYWtLLVdsQXdkTGNKSVhNUElYaV9MU1M4c1NpVklYVXZQVE12TlRVb3N5OGRBQSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0=",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSA0MC8yMC80MCBydWxlIG9mIHRodW1iIGluIHNvZnR3YXJlIGVuZ2luZWVyaW5nPyIsImxrIjoiYzVPeUtzOUlMRkhJTEZZb3lVaFZNREZRTURJQWtVV2xPYWtLLVdsQXdkTGNKSVhNUElYaV9MU1M4c1NpVklYVXZQVE12TlRVb3N5OGRBQSIsImJzIjoiYy1PSzQ5SjJUc3hUOEZRb3p5X0tWaWhLemMwdlNjMnBWRWdzVmtoVUtNNVBLeWxQTEVwVlNNMUx6OHhMVFMyeWwxaGtacVFqcFpVTTFKRkpsQTZ1UkM1ZGtQbVYtYVVLdVluWnFRb3FwZ1lHT2dZR0JqaHRtQzFpcEN1bG5ZeXVCN2NXcmpvdTZfQ014QktGekdLRmtveFVCUk1EZlNNRGZSTURoYUxTbkZTRl9EU2dZR2x1a2tKbUhxYld6THgwZTRrcDZrWTJVbGJsS0NZb0dCa29FR3NDVndxWG5pTlFDS2dUU0JhWFpPYmtRRU1GVTdsQ1ZuNVNzYjNFcXpnamZTbmRSRkkwQ1RBQ0FBIiwiaWQiOiJmY19GaUFLYU1LY0pzaU93YmtQNy12UXFRZ18yIn0%3D"
+      "question": "Can I be a software engineer remotely?",
+      "snippet": "Even if many companies are trying to force workers back to the office, this stat suggests that plenty of employers agree that a good deal of software engineer jobs can be done remotely.",
+      "title": "Fully Remote Software Engineer Jobs - WeAreDevelopers",
+      "date": "May 21, 2024",
+      "link": "https://www.wearedevelopers.com/en/magazine/447/fully-remote-software-engineer-jobs#:~:text=Even%20if%20many%20companies%20are,jobs%20can%20be%20done%20remotely.",
+      "displayed_link": "https://www.wearedevelopers.com \u203a magazine \u203a fully-re...",
+      "source_logo": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/d63cc1755e991f341d950550a464df4ae02b0315deda783d23e576c1b1281817.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJDYW4gSSBiZSBhIHNvZnR3YXJlIGVuZ2luZWVyIHJlbW90ZWx5PyIsImxrIjoiR2lWallXNGdhU0JpWlNCaElITnZablIzWVhKbElHVnVaMmx1WldWeUlISmxiVzkwWld4NSIsImJzIjoiYy1OSzRkSnpMRXBWS01sSUJaTEZKWms1T1FwRnFibjVKVUJPZmxwSmVTSlFORFV2UFRNdk5iVklJU3NfcWRoZTRsV2NrYjZVYmlJcG1yZ1N1WFNkRV9NVUt2TkxGWElUczFNVlZFd05ESFFNREF3VUVvc1ZFakUxMlV2TUZqSFNsZEpPUnRlRFd3dFhDSmNheUFwUGhhUlViUEpRQi1aVTJrc3NNak5TbDFJRm1aMUpTREVYTUhnODhzc1Zja3VUTXhSUzhsTkJWdVAwS2NpVjloS1RrMERCazBHS0pnRkdBQSIsImlkIjoiZmNfb1ZNS2FObkVHWks0d1BBUG1aUG55QW9fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJDYW4gSSBiZSBhIHNvZnR3YXJlIGVuZ2luZWVyIHJlbW90ZWx5PyIsImxrIjoiR2lWallXNGdhU0JpWlNCaElITnZablIzWVhKbElHVnVaMmx1WldWeUlISmxiVzkwWld4NSIsImJzIjoiYy1OSzRkSnpMRXBWS01sSUJaTEZKWms1T1FwRnFibjVKVUJPZmxwSmVTSlFORFV2UFRNdk5iVklJU3NfcWRoZTRsV2NrYjZVYmlJcG1yZ1N1WFNkRV9NVUt2TkxGWElUczFNVlZFd05ESFFNREF3VUVvc1ZFakUxMlV2TUZqSFNsZEpPUnRlRFd3dFhDSmNheUFwUGhhUlViUEpRQi1aVTJrc3NNak5TbDFJRm1aMUpTREVYTUhnODhzc1Zja3VUTXhSUzhsTkJWdVAwS2NpVjloS1RrMERCazBHS0pnRkdBQSIsImlkIjoiZmNfb1ZNS2FObkVHWks0d1BBUG1aUG55QW9fNSJ9"
     },
     {
-      "question": "Are there still remote software engineer jobs?",
-      "snippet": "If you're an experienced software engineer, there's a wide range of full-time remote work opportunities you can take advantage of to gain the freedom\u2014and income\u2014you're looking for.",
-      "title": "10 Best Remote Software Engineering Tech Jobs - Crossover",
-      "link": "https://www.crossover.com/resources/10-remote-software-engineering-jobs#:~:text=If%20you're%20an%20experienced,%E2%80%94you're%20looking%20for.",
-      "displayed_link": "https://www.crossover.com \u203a resources \u203a 10-remote-soft...",
-      "source_logo": "https://serpapi.com/searches/680a2016339288b8806cd287/images/d63cc1755e991f341d950550a464df4a6857f6ac307c3376b9fc5963f63f5443.png",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJBcmUgdGhlcmUgc3RpbGwgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIGpvYnM/IiwibGsiOiJjNVBTVFN4S1ZTakpTQVdTeFNXWk9Ua0tSYW01LVNWQVRuNWFTVGxJTGpVdlBUTXZOYlZJSVNzX3FSZ0EiLCJicyI6ImMtT0s0OUoyVHN4VDhGUW96eV9LVmloS3pjMHZTYzJwVkVnc1ZraFVLTTVQS3lsUExFcFZTTTFMejh4TFRTMnlsMWhrWnFRanBaVU0xSkZKbEE2dVJDNWRrUG1WLWFVS3VZblpxUW9xcGdZR09nWUdCamh0bUMxaXBDdWxuWXl1QjdjV3Jqb3U2X0NNeEJLRnpHS0Zrb3hVQlJNRGZTTURmUk1EaGFMU25GU0ZfRFNnWUdsdWtrSm1IcWJXekx4MGU0a3A2a1kyVWxibEtDWW9HQmtvRUdzQ1Z3cVhuaU5RQ0tnVFNCYVhaT2JrUUVNRlU3bENWbjVTc2IzRXF6Z2pmU25kUkZJMENUQUNBQSIsImlkIjoiZmNfRmlBS2FNS2NKc2lPd2JrUDctdlFxUWdfMiJ9",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoamJsOXVNalpEUldkWVZtRmtWMmR5TmxoM1MxTjFTbWx2YjNCS00xcEVUM1EwWm5aeGJ6ZDJVVGhpV0ZSQmFqVkNOVkZZY2pOMVkwUktNMU56V1drNVpsaFNSQzAwWTJZM1UxOUtTWGQ0Y1haSE1VODRRV3RNWDJWaWR4SVhSbWxCUzJGTlMyTktjMmxQZDJKclVEY3RkbEZ4VVdjYUlrRkRSRmhNTkcxeVQzUklTMmRwYUhneE1WRTFlQzF2WVdSV01UTlliM2M1UkZFIiwiZmN2IjoiMyIsImVpIjoiRmlBS2FNS2NKc2lPd2JrUDctdlFxUWciLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFIMERqUjhfIiwicXVlc3Rpb24iOiJBcmUgdGhlcmUgc3RpbGwgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIGpvYnM%2FIiwibGsiOiJjNVBTVFN4S1ZTakpTQVdTeFNXWk9Ua0tSYW01LVNWQVRuNWFTVGxJTGpVdlBUTXZOYlZJSVNzX3FSZ0EiLCJicyI6ImMtT0s0OUoyVHN4VDhGUW96eV9LVmloS3pjMHZTYzJwVkVnc1ZraFVLTTVQS3lsUExFcFZTTTFMejh4TFRTMnlsMWhrWnFRanBaVU0xSkZKbEE2dVJDNWRrUG1WLWFVS3VZblpxUW9xcGdZR09nWUdCamh0bUMxaXBDdWxuWXl1QjdjV3Jqb3U2X0NNeEJLRnpHS0Zrb3hVQlJNRGZTTURmUk1EaGFMU25GU0ZfRFNnWUdsdWtrSm1IcWJXekx4MGU0a3A2a1kyVWxibEtDWW9HQmtvRUdzQ1Z3cVhuaU5RQ0tnVFNCYVhaT2JrUUVNRlU3bENWbjVTc2IzRXF6Z2pmU25kUkZJMENUQUNBQSIsImlkIjoiZmNfRmlBS2FNS2NKc2lPd2JrUDctdlFxUWdfMiJ9"
+      "question": "How much does a remote software engineer make?",
+      "snippet": "The estimated total pay for a Remote Software Engineer is $132,111 per year, with an average salary of $113,827 per year. These numbers represent the median, which is the midpoint of the ranges from our proprietary Total Pay Estimate model and based on salaries collected from our users.",
+      "title": "Salary: Remote Software Engineer in United States 2025 - Glassdoor",
+      "link": "https://www.glassdoor.com/Salaries/remote-software-engineer-salary-SRCH_KO0,24.htm#:~:text=The%20estimated%20total%20pay%20for,salaries%20collected%20from%20our%20users.",
+      "displayed_link": "https://www.glassdoor.com \u203a Salaries \u203a remote-software-...",
+      "source_logo": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/d63cc1755e991f341d950550a464df4a6857f6ac307c3376b9fc5963f63f5443.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJIb3cgbXVjaCBkb2VzIGEgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIG1ha2U/IiwibGsiOiJHaTFvYjNjZ2JYVmphQ0JrYjJWeklHRWdjbVZ0YjNSbElITnZablIzWVhKbElHVnVaMmx1WldWeUlHMWhhMlUiLCJicyI6ImMtTks0ZEp6TEVwVktNbElCWkxGSlprNU9RcEZxYm41SlVCT2ZscEplU0pRTkRVdlBUTXZOYlZJSVNzX3FkaGU0bFdja2I2VWJpSXBtcmdTdVhTZEVfTVVLdk5MRlhJVHMxTVZWRXdOREhRTURBd1VFb3NWRWpFMTJVdk1GakhTbGRKT1J0ZURXd3RYQ0pjYXlBcFBoYVJVYlBKUUItWlUya3NzTWpOU2wxSUZtWjFKU0RFWE1IZzg4c3NWY2t1VE14UlM4bE5CVnVQMEtjaVY5aEtUazBEQmswR0tKZ0ZHQUEiLCJpZCI6ImZjX29WTUthTm5FR1pLNHdQQVBtWlBueUFvXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobVUzVkpRa1pMZVRCblZXMVpkbmhhT1ZVeWVEUnlibUZyVjJsUFVHTnplWGRvZUV4dlluSTBSa2RSV2tSUlYzcFVSbnBpZFhBNVQzSkhVMWx4TkhneU5uRllhbkJqYjNaRlduVmpURk4zT1ZsNWJtdFBRMXBNVkhCbFVSSVhiMVpOUzJGT2JrVkhXa3MwZDFCQlVHMWFVRzU1UVc4YUlrRkRSRmhNTkd0M1RYTjFNR3RKVXpsNVFreEZObWhOU2xWU1gxSm5VMlpHU21jIiwiZmN2IjoiMyIsImVpIjoib1ZNS2FObkVHWks0d1BBUG1aUG55QW8iLCJxYyI6IkNoaHpiMlowZDJGeVpTQmxibWRwYm1WbGNpQnlaVzF2ZEdVUUFEZ0JmUU9OSHo4IiwicXVlc3Rpb24iOiJIb3cgbXVjaCBkb2VzIGEgcmVtb3RlIHNvZnR3YXJlIGVuZ2luZWVyIG1ha2U%2FIiwibGsiOiJHaTFvYjNjZ2JYVmphQ0JrYjJWeklHRWdjbVZ0YjNSbElITnZablIzWVhKbElHVnVaMmx1WldWeUlHMWhhMlUiLCJicyI6ImMtTks0ZEp6TEVwVktNbElCWkxGSlprNU9RcEZxYm41SlVCT2ZscEplU0pRTkRVdlBUTXZOYlZJSVNzX3FkaGU0bFdja2I2VWJpSXBtcmdTdVhTZEVfTVVLdk5MRlhJVHMxTVZWRXdOREhRTURBd1VFb3NWRWpFMTJVdk1GakhTbGRKT1J0ZURXd3RYQ0pjYXlBcFBoYVJVYlBKUUItWlUya3NzTWpOU2wxSUZtWjFKU0RFWE1IZzg4c3NWY2t1VE14UlM4bE5CVnVQMEtjaVY5aEtUazBEQmswR0tKZ0ZHQUEiLCJpZCI6ImZjX29WTUthTm5FR1pLNHdQQVBtWlBueUFvXzUifQ%3D%3D"
     }
   ],
   "organic_results": [
@@ -150,9 +137,9 @@
       "position": 1,
       "title": "Software Engineer Remote Jobs, Employment",
       "link": "https://www.indeed.com/q-software-engineer-remote-jobs.html",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.indeed.com/q-software-engineer-remote-jobs.html&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECBEQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.indeed.com/q-software-engineer-remote-jobs.html&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECBAQAQ",
       "displayed_link": "https://www.indeed.com \u203a q-software-engineer-remote-jo...",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adcedaca2735d15ca70c421ccdb068bc380ae.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adcedaca2735d15ca70c421ccdb068bc380ae.png",
       "snippet": "6942 Software Engineer Remote jobs available on Indeed.com. Apply to Software Engineer, Full Stack Developer, Back End Developer and more!",
       "snippet_highlighted_words": [
         "6942 Software Engineer Remote jobs available on Indeed.com"
@@ -163,10 +150,10 @@
       "position": 2,
       "title": "Software Engineer Jobs in Remote at Capital One",
       "link": "https://www.capitalonecareers.com/employment/remote-software-engineer-jobs/234/8679440/1000000000100/2",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capitalonecareers.com/employment/remote-software-engineer-jobs/234/8679440/1000000000100/2&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECBAQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capitalonecareers.com/employment/remote-software-engineer-jobs/234/8679440/1000000000100/2&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECA8QAQ",
       "displayed_link": "https://www.capitalonecareers.com \u203a employment \u203a remo...",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adcedfec076e9bddf18968fbac3ff2b2127bd.png",
-      "snippet": "Software Engineer Jobs in Remote \u00b7 Filtered by \u00b7 Principal Software Engineer, Rust - Capital One Software (Remote) \u00b7 Principal Software Engineer, Rust - Capital ...",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adcedfec076e9bddf18968fbac3ff2b2127bd.png",
+      "snippet": "Software Engineer Jobs in Remote \u00b7 Filtered by \u00b7 Software Engineer, Rust - Capital One Software (Remote) \u00b7 Principal Software Engineer, Rust - Capital One ...",
       "snippet_highlighted_words": [
         "Software Engineer Jobs in Remote"
       ],
@@ -176,9 +163,9 @@
       "position": 3,
       "title": "would like a reality check on getting remote software ...",
       "link": "https://www.reddit.com/r/digitalnomad/comments/16ju4uc/would_like_a_reality_check_on_getting_remote/",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/digitalnomad/comments/16ju4uc/would_like_a_reality_check_on_getting_remote/&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECFAQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/digitalnomad/comments/16ju4uc/would_like_a_reality_check_on_getting_remote/&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECBMQAQ",
       "displayed_link": "20+ comments \u00b7 1 year ago",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adcedb9eee17f4742862ba47ad64a4712827f.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adcedb9eee17f4742862ba47ad64a4712827f.png",
       "snippet": "Short answer, you'll have to work your way up there. As a newbie, the only way you're getting a fully remote job from the get-go is from connections.",
       "snippet_highlighted_words": [
         "you'll have to work your way up there"
@@ -205,9 +192,9 @@
       "position": 4,
       "title": "Remote Full-Stack Programming Jobs",
       "link": "https://weworkremotely.com/categories/remote-full-stack-programming-jobs",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://weworkremotely.com/categories/remote-full-stack-programming-jobs&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECDsQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://weworkremotely.com/categories/remote-full-stack-programming-jobs&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECC4QAQ",
       "displayed_link": "https://weworkremotely.com \u203a categories \u203a remote-full-...",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adcedb693025cea35e6a4299d4476ad70700b.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adcedb693025cea35e6a4299d4476ad70700b.png",
       "snippet": "The latest remote full-stack programming jobs from top remote companies! Find your new full-stack programming Career today on We Work Remotely!",
       "snippet_highlighted_words": [
         "remote full-stack programming jobs from top remote companies"
@@ -218,9 +205,9 @@
       "position": 5,
       "title": "20000+ Remote Software Engineer jobs in United States ...",
       "link": "https://www.linkedin.com/jobs/remote-software-engineer-jobs",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/jobs/remote-software-engineer-jobs&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECDoQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/jobs/remote-software-engineer-jobs&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECC0QAQ",
       "displayed_link": "https://www.linkedin.com \u203a jobs \u203a remote-software-engi...",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adced15fd3bd58f170f20dcff65673cf0eda7.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adced15fd3bd58f170f20dcff65673cf0eda7.png",
       "snippet": "Today's top 20000+ Remote Software Engineer jobs in United States. Leverage your professional network, and get hired. New Remote Software Engineer jobs ...",
       "snippet_highlighted_words": [
         "Remote Software Engineer jobs in United States"
@@ -231,9 +218,9 @@
       "position": 6,
       "title": "$63k-$195k Remote Entry Level Software Developer Jobs",
       "link": "https://www.ziprecruiter.com/Jobs/Remote-Entry-Level-Software-Developer",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ziprecruiter.com/Jobs/Remote-Entry-Level-Software-Developer&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECEAQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ziprecruiter.com/Jobs/Remote-Entry-Level-Software-Developer&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECDAQAQ",
       "displayed_link": "https://www.ziprecruiter.com \u203a Jobs \u203a Remote-Entry-Le...",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adced1170ffc5d3053fb97dc6f01fed36b334.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adced1170ffc5d3053fb97dc6f01fed36b334.png",
       "snippet": "Browse 80137 REMOTE ENTRY LEVEL SOFTWARE DEVELOPER jobs ($63k-$195k) from companies near you with job openings that are hiring now and 1-click apply!",
       "snippet_highlighted_words": [
         "Browse 80137 REMOTE ENTRY LEVEL SOFTWARE DEVELOPER jobs"
@@ -260,9 +247,9 @@
       "position": 7,
       "title": "Remote Software Engineer Jobs in 2025",
       "link": "https://wellfound.com/role/r/software-engineer",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wellfound.com/role/r/software-engineer&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECEEQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wellfound.com/role/r/software-engineer&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECC8QAQ",
       "displayed_link": "https://wellfound.com \u203a role \u203a software-engineer",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adced8e3187f55da2e936ba816e9a11e40e6b.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adced8e3187f55da2e936ba816e9a11e40e6b.png",
       "snippet": "Find the best remote Software Engineer jobs in 2025 on Wellfound! Apply to all of them with a single profile and get in touch with hiring ...",
       "snippet_highlighted_words": [
         "Find the best remote Software Engineer jobs in 2025 on Wellfound"
@@ -293,9 +280,9 @@
       "position": 8,
       "title": "Best Remote Software Engineer Jobs in NYC, NY 2025",
       "link": "https://www.builtinnyc.com/jobs/remote/dev-engineering",
-      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.builtinnyc.com/jobs/remote/dev-engineering&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQFnoECDwQAQ",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.builtinnyc.com/jobs/remote/dev-engineering&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQFnoECCwQAQ",
       "displayed_link": "https://www.builtinnyc.com \u203a jobs \u203a dev-engineering",
-      "favicon": "https://serpapi.com/searches/680a2016339288b8806cd287/images/196534c2f15d2dc2cc53c77be88adcede9d9a4def1b01acadfd6a2190405447f.png",
+      "favicon": "https://serpapi.com/searches/680a53a08f6625f78740f029/images/196534c2f15d2dc2cc53c77be88adcede9d9a4def1b01acadfd6a2190405447f.png",
       "snippet": "Search the best Remote Software Engineer Jobs from top companies & startups in NYC, NY. New jobs added daily.",
       "snippet_highlighted_words": [
         "Search the best Remote Software Engineer Jobs"
@@ -310,7 +297,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRjUwJNOx_axXp6yT5rJSaZ64FQYb_RX7Xlfq5_EWG4OTxFjC2AZgf54MUvtnDzpg_ygG2FeXn1KRcdBnWHUe9pA5GqDx9cLBdRdNcQjDtxpmYxUEdZTq-DayZ7NS7GmlIumyik4pIFdK-u292V5BHv8un0i4",
         "q": "Software Engineer Remote remote"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRjUwJNOx_axXp6yT5rJSaZ64FQYb_RX7Xlfq5_EWG4OTxFjC2AZgf54MUvtnDzpg_ygG2FeXn1KRcdBnWHUe9pA5GqDx9cLBdRdNcQjDtxpmYxUEdZTq-DayZ7NS7GmlIumyik4pIFdK-u292V5BHv8un0i4&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIMBAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRjUwJNOx_axXp6yT5rJSaZ64FQYb_RX7Xlfq5_EWG4OTxFjC2AZgf54MUvtnDzpg_ygG2FeXn1KRcdBnWHUe9pA5GqDx9cLBdRdNcQjDtxpmYxUEdZTq-DayZ7NS7GmlIumyik4pIFdK-u292V5BHv8un0i4&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIGhAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRjUwJNOx_axXp6yT5rJSaZ64FQYb_RX7Xlfq5_EWG4OTxFjC2AZgf54MUvtnDzpg_ygG2FeXn1KRcdBnWHUe9pA5GqDx9cLBdRdNcQjDtxpmYxUEdZTq-DayZ7NS7GmlIumyik4pIFdK-u292V5BHv8un0i4"
     },
     {
@@ -319,7 +306,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4h-WEJ2ntCMGNIiJAMq9POKTZikS5ARO2S852vMjXImTTtoineMwfOp3Lh0C2IPH4yO1q0rJjW67tsmInOCKc26fQmAv5Fj2sHZAfG-8ivamLhHWAByZ7VUxeyyJzHmMsqKLv1M",
         "q": "Software Engineer Remote no degree"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+no+degree&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4h-WEJ2ntCMGNIiJAMq9POKTZikS5ARO2S852vMjXImTTtoineMwfOp3Lh0C2IPH4yO1q0rJjW67tsmInOCKc26fQmAv5Fj2sHZAfG-8ivamLhHWAByZ7VUxeyyJzHmMsqKLv1M&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIKRAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+no+degree&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4h-WEJ2ntCMGNIiJAMq9POKTZikS5ARO2S852vMjXImTTtoineMwfOp3Lh0C2IPH4yO1q0rJjW67tsmInOCKc26fQmAv5Fj2sHZAfG-8ivamLhHWAByZ7VUxeyyJzHmMsqKLv1M&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIIRAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+no+degree&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4h-WEJ2ntCMGNIiJAMq9POKTZikS5ARO2S852vMjXImTTtoineMwfOp3Lh0C2IPH4yO1q0rJjW67tsmInOCKc26fQmAv5Fj2sHZAfG-8ivamLhHWAByZ7VUxeyyJzHmMsqKLv1M"
     },
     {
@@ -328,7 +315,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRMig7EtYo4Rsu7ScWtG0bDDLbrGf6RgF3-hYuah3Hy89kbL6x7zfKMnuf_6cJbK3sRPlFy5iExEZeABvRdHViYE2RkvTurl4n3xgiq8kolNVa1N0u7eaPsgH1nf0ajOwfFuXVi1QciT0T6FQQQL3dexkeciyLruwzXarzkhW89ZuxoaT90Y2Z7jyXi-V3hpZ5iqSgKdHAZ7th5OQoJ6n51__40Sc",
         "q": "Remote Software Engineer salary"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Remote+Software+Engineer+salary&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRMig7EtYo4Rsu7ScWtG0bDDLbrGf6RgF3-hYuah3Hy89kbL6x7zfKMnuf_6cJbK3sRPlFy5iExEZeABvRdHViYE2RkvTurl4n3xgiq8kolNVa1N0u7eaPsgH1nf0ajOwfFuXVi1QciT0T6FQQQL3dexkeciyLruwzXarzkhW89ZuxoaT90Y2Z7jyXi-V3hpZ5iqSgKdHAZ7th5OQoJ6n51__40Sc&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIKBAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Remote+Software+Engineer+salary&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRMig7EtYo4Rsu7ScWtG0bDDLbrGf6RgF3-hYuah3Hy89kbL6x7zfKMnuf_6cJbK3sRPlFy5iExEZeABvRdHViYE2RkvTurl4n3xgiq8kolNVa1N0u7eaPsgH1nf0ajOwfFuXVi1QciT0T6FQQQL3dexkeciyLruwzXarzkhW89ZuxoaT90Y2Z7jyXi-V3hpZ5iqSgKdHAZ7th5OQoJ6n51__40Sc&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIHxAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Remote+Software+Engineer+salary&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRMig7EtYo4Rsu7ScWtG0bDDLbrGf6RgF3-hYuah3Hy89kbL6x7zfKMnuf_6cJbK3sRPlFy5iExEZeABvRdHViYE2RkvTurl4n3xgiq8kolNVa1N0u7eaPsgH1nf0ajOwfFuXVi1QciT0T6FQQQL3dexkeciyLruwzXarzkhW89ZuxoaT90Y2Z7jyXi-V3hpZ5iqSgKdHAZ7th5OQoJ6n51__40Sc"
     },
     {
@@ -337,7 +324,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I0RQIB-Ww6KJKxu1dXIqW_ClgFnuGzjq9JNbBS1LavS3Fo1NLj5CP_kny8aZnHrnQSifA72AGjG79w5ROyY8Xh-6ZV-BT5-Ib2fdcOmvaAGkSBxFpBbsO3t6bETVzUhm30N2ORd5Kvfx685SbqAjSU0T3oPyINEYsytlPKqMgVrxev1bqh",
         "q": "Software engineer remote work from home"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+engineer+remote+work+from+home&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I0RQIB-Ww6KJKxu1dXIqW_ClgFnuGzjq9JNbBS1LavS3Fo1NLj5CP_kny8aZnHrnQSifA72AGjG79w5ROyY8Xh-6ZV-BT5-Ib2fdcOmvaAGkSBxFpBbsO3t6bETVzUhm30N2ORd5Kvfx685SbqAjSU0T3oPyINEYsytlPKqMgVrxev1bqh&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIJxAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+engineer+remote+work+from+home&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I0RQIB-Ww6KJKxu1dXIqW_ClgFnuGzjq9JNbBS1LavS3Fo1NLj5CP_kny8aZnHrnQSifA72AGjG79w5ROyY8Xh-6ZV-BT5-Ib2fdcOmvaAGkSBxFpBbsO3t6bETVzUhm30N2ORd5Kvfx685SbqAjSU0T3oPyINEYsytlPKqMgVrxev1bqh&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIHBAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+engineer+remote+work+from+home&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I0RQIB-Ww6KJKxu1dXIqW_ClgFnuGzjq9JNbBS1LavS3Fo1NLj5CP_kny8aZnHrnQSifA72AGjG79w5ROyY8Xh-6ZV-BT5-Ib2fdcOmvaAGkSBxFpBbsO3t6bETVzUhm30N2ORd5Kvfx685SbqAjSU0T3oPyINEYsytlPKqMgVrxev1bqh"
     },
     {
@@ -349,7 +336,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q",
             "q": "Software Engineer Remote since yesterday"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAC",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAC",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q"
         },
         {
@@ -358,7 +345,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM",
             "q": "Software Engineer Remote in the last 3 days"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAD",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAD",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM"
         },
         {
@@ -367,7 +354,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs",
             "q": "Software Engineer Remote in the last week"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAE",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAE",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs"
         },
         {
@@ -376,7 +363,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE",
             "q": "Software Engineer Remote in the last month"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAF",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAF",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE"
         }
       ]
@@ -390,7 +377,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q",
             "q": "Software Engineer Remote since yesterday"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAC",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAC",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+since+yesterday&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRmZJ1jwxf4W1Wl0rIubTZwVwlW4LS3KNEspURhX_2K8Eu1ie4oeTIyHKe_uPs4UCXeA7l1RVgsdF5rIJz__XSNe8xMaE5WrpTyey5lxBJju0xA1R--Af87T14due589SS0ukjxluMZyd_q6u3iSpkZ8_l0PwkI7QakqCK236i9xi0fvLtEMZPKhBKGqoFpdLmhEJMCIm3HCiVhZSwXvvzhIMkB5tpAUJ18m-9mmAqg8Cwqw_2AEx3q-GZB6xfkZvM3AilIru7Q332EDH7hl2WTZOhJVy961AcI86g15AqqpQdwnQlGF9GOADRai6AfcD6ZK2G_LXzc7URTe_lHwdKSI3Ak6Q"
         },
         {
@@ -399,7 +386,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM",
             "q": "Software Engineer Remote in the last 3 days"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAD",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAD",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+3+days&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRcBpESTbnvQ0SbUT68AGkY0rXPRromxXAZ7yDo_qcIDwms1U0NJayAjsd0Jd2tNBHTOj3oXM4X7k2nfqeTx_qUtYb4bv2itauQs6BRzMvVPlhaa3PlginVl9r9OydCPwrDaKKq8x0t3aKvsewrZvOxpA8w_9SBJZ1Xuhh2f6GsgUgdWYm6UuIEJCSoYajXqL-fm4LR0DIsRcSC39h_ED5_Y8PQrYHGyP9Uehoq3whLSqpMO0LCWK6zZSNAIzxlnKmywAl5qlDz8VPwvFDE4MrgP7uj-BLxOod3SaUpo6MlwwAPNgw9LkyFeHZw_yvWy9gv0Owkbn-G8-jd3_vRQuhKaA1OQM"
         },
         {
@@ -408,7 +395,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs",
             "q": "Software Engineer Remote in the last week"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAE",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAE",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+week&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRnj2GWIzBODalEhrt0pUoHmxjgbLfSW9CU6nCSrR32XUAaaLfYjEKSOin2TA3lXgE4dqSimz-Wgnszc6Bz5b4wWUX5p8J5fW-cXhPSds1MBEPeG54TA6QIR15SU7p1PmgQmscPeQS4fF0mkGNQLZHn3PH9eVZeiTAhmCeIYjeYY4UA4Rj_ZG0fySDoSptuZ6c1H2V67uZPxE8Md6onWHjez3ZWbK5xH_vZhkrT3rURNvPYA1O1a0TpW_jnYznepyh0tKV5vyNh8EQXm1wTl_jUhZtRA8EVCI7rAA7B1te9Hb64l7rl_Au72e9E69c3uQ3gUPhEXfeaiuJeP1xQ_p9a9UPdgs"
         },
         {
@@ -417,7 +404,7 @@
             "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE",
             "q": "Software Engineer Remote in the last month"
           },
-          "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQkbEKegQIKhAF",
+          "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQkbEKegQIHRAF",
           "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+in+the+last+month&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRc4DDUV5gwpmYoRu7pmGqorL4qQdpFdQ7-bHN7nDWWfEM73Fk6EpnEsFdcgZLE83jJ7BFuX-PpP5NTL433VMEz9KJC23HvjyXawdSXDZ8NfSs_IuHA0-VNxTQy5CoJbg97l9Xl0mnARoyv3_uEUdUDX34yo8StAe_mP2MCYyvhPbFzEf9HbLNPJeCQD1xrbuQN72Rszm6Qp0-e46TEvI4wchsDT-oet5Px5zOm4Lcu2bwS8ujiXX3ZnCvu6N1P5GQ_RnYbmaKZ7A8FdJitld1mDZEUZt8-LJJIzpg4MP2Wcw7K5nie9gu51AFWy-aXUi6mvgfuGHUCfzhN1F3uSOvLaOIoVE"
         }
       ]
@@ -428,7 +415,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRA7VbJGu5eTer-bCx76qODH4Xz6bWm-cLtAbPWvLkuP1XS-BahH8Y1WqZgjTIw5GMWp81k6MyxsxkrdmcOYEv8VlMakX9l3jQL-b6P1Sa2gk_dRHKYzkeFWJQfWBtTvmoaoWn03judPekmkpJ08ZattbUJgAXftYvRKYOvjof5ipm5lsPniLGJv4fVKFRD8qJe2pctw_pDn3Pz67w3zgSzX-t-pA",
         "q": "Software Engineer internship remote"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+internship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRA7VbJGu5eTer-bCx76qODH4Xz6bWm-cLtAbPWvLkuP1XS-BahH8Y1WqZgjTIw5GMWp81k6MyxsxkrdmcOYEv8VlMakX9l3jQL-b6P1Sa2gk_dRHKYzkeFWJQfWBtTvmoaoWn03judPekmkpJ08ZattbUJgAXftYvRKYOvjof5ipm5lsPniLGJv4fVKFRD8qJe2pctw_pDn3Pz67w3zgSzX-t-pA&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIcRAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+internship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRA7VbJGu5eTer-bCx76qODH4Xz6bWm-cLtAbPWvLkuP1XS-BahH8Y1WqZgjTIw5GMWp81k6MyxsxkrdmcOYEv8VlMakX9l3jQL-b6P1Sa2gk_dRHKYzkeFWJQfWBtTvmoaoWn03judPekmkpJ08ZattbUJgAXftYvRKYOvjof5ipm5lsPniLGJv4fVKFRD8qJe2pctw_pDn3Pz67w3zgSzX-t-pA&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIdBAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+internship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRA7VbJGu5eTer-bCx76qODH4Xz6bWm-cLtAbPWvLkuP1XS-BahH8Y1WqZgjTIw5GMWp81k6MyxsxkrdmcOYEv8VlMakX9l3jQL-b6P1Sa2gk_dRHKYzkeFWJQfWBtTvmoaoWn03judPekmkpJ08ZattbUJgAXftYvRKYOvjof5ipm5lsPniLGJv4fVKFRD8qJe2pctw_pDn3Pz67w3zgSzX-t-pA"
     },
     {
@@ -437,7 +424,7 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR2BVg1QEy-H3X3agWbuJVtsE_PtBqnhGDHVyDf0vc3O3aZIZgYAb7_ewp-7K1ElgBAsARWZos1cdv51_3yJamoti6ikW69rApI0zb-4jlABq-r8DF9V1FAn04dhmhwXn3BTif4qSTEnrsEgvP5Hn00SL2iQYQrGD0oLJqmKWMNXKMgcwl3CN72LzrcJ18AYIV98zKbvjgsLp-sXDa8mj1OdFc2HdY10ws0BzVbBsXCEiZwIkm",
         "q": "Part-time Software Engineer Remote"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Part-time+Software+Engineer+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR2BVg1QEy-H3X3agWbuJVtsE_PtBqnhGDHVyDf0vc3O3aZIZgYAb7_ewp-7K1ElgBAsARWZos1cdv51_3yJamoti6ikW69rApI0zb-4jlABq-r8DF9V1FAn04dhmhwXn3BTif4qSTEnrsEgvP5Hn00SL2iQYQrGD0oLJqmKWMNXKMgcwl3CN72LzrcJ18AYIV98zKbvjgsLp-sXDa8mj1OdFc2HdY10ws0BzVbBsXCEiZwIkm&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIbhAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Part-time+Software+Engineer+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR2BVg1QEy-H3X3agWbuJVtsE_PtBqnhGDHVyDf0vc3O3aZIZgYAb7_ewp-7K1ElgBAsARWZos1cdv51_3yJamoti6ikW69rApI0zb-4jlABq-r8DF9V1FAn04dhmhwXn3BTif4qSTEnrsEgvP5Hn00SL2iQYQrGD0oLJqmKWMNXKMgcwl3CN72LzrcJ18AYIV98zKbvjgsLp-sXDa8mj1OdFc2HdY10ws0BzVbBsXCEiZwIkm&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIdRAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Part-time+Software+Engineer+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR2BVg1QEy-H3X3agWbuJVtsE_PtBqnhGDHVyDf0vc3O3aZIZgYAb7_ewp-7K1ElgBAsARWZos1cdv51_3yJamoti6ikW69rApI0zb-4jlABq-r8DF9V1FAn04dhmhwXn3BTif4qSTEnrsEgvP5Hn00SL2iQYQrGD0oLJqmKWMNXKMgcwl3CN72LzrcJ18AYIV98zKbvjgsLp-sXDa8mj1OdFc2HdY10ws0BzVbBsXCEiZwIkm"
     },
     {
@@ -446,84 +433,84 @@
         "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I05RthkoFmuRgA6ncg9FIaOkTFxRKaBXkZLFr-T2u1Mtfri8vfT9jz5bYs5D7H_bOCypAB17irPNLNsVla8E5-lJRFGliyKu29_xz_i3olUzkggFSuGA4gefPiToP4398sIvG7beuYRjQ7qjItfdvriNyaqM-d21QSnm-yMpRe6vgZuhSa",
         "q": "Software Engineer apprenticeship remote"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+apprenticeship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I05RthkoFmuRgA6ncg9FIaOkTFxRKaBXkZLFr-T2u1Mtfri8vfT9jz5bYs5D7H_bOCypAB17irPNLNsVla8E5-lJRFGliyKu29_xz_i3olUzkggFSuGA4gefPiToP4398sIvG7beuYRjQ7qjItfdvriNyaqM-d21QSnm-yMpRe6vgZuhSa&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIcBAB&ictx=0",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+apprenticeship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I05RthkoFmuRgA6ncg9FIaOkTFxRKaBXkZLFr-T2u1Mtfri8vfT9jz5bYs5D7H_bOCypAB17irPNLNsVla8E5-lJRFGliyKu29_xz_i3olUzkggFSuGA4gefPiToP4398sIvG7beuYRjQ7qjItfdvriNyaqM-d21QSnm-yMpRe6vgZuhSa&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIcRAB&ictx=0",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+apprenticeship+remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRJviL-7tHEgN42Lx8ZkQpBZg77VMUCPDhX25XSfQCn3A68YEriFdK0ZdouLbTs7I05RthkoFmuRgA6ncg9FIaOkTFxRKaBXkZLFr-T2u1Mtfri8vfT9jz5bYs5D7H_bOCypAB17irPNLNsVla8E5-lJRFGliyKu29_xz_i3olUzkggFSuGA4gefPiToP4398sIvG7beuYRjQ7qjItfdvriNyaqM-d21QSnm-yMpRe6vgZuhSa"
     },
     {
       "name": "New grad",
       "parameters": {
-        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2VP-MQTXTK1Ks9JvOCMzmc76GxU6dPz7PC22-K6drJcbPLfUqGfJWk8zfNQfRqSg7lxh_e5vii8OuL_u8WIpTFbGWXr9Zs_13-I3diWcociZgcwJqiI4dtZF_U0DMWHxlJVU2hk",
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2ULMEBagzBYykbGYy_fEU5fPDf_aNmVs3H0a4Ov6EKMslZ1Z8ZRg-L3ibXHGBzt_ZTIGRZq1y2HmrW1tvs67LPUvUSzUgT3a3_sfWMv1SFglzBwGfTCdsaPI-mOnmmWYiuqNefF",
         "q": "New grad Software Engineer - Remote"
       },
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=New+grad+Software+Engineer+-+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2VP-MQTXTK1Ks9JvOCMzmc76GxU6dPz7PC22-K6drJcbPLfUqGfJWk8zfNQfRqSg7lxh_e5vii8OuL_u8WIpTFbGWXr9Zs_13-I3diWcociZgcwJqiI4dtZF_U0DMWHxlJVU2hk&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQxKsJegQIchAB&ictx=0",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=New+grad+Software+Engineer+-+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2VP-MQTXTK1Ks9JvOCMzmc76GxU6dPz7PC22-K6drJcbPLfUqGfJWk8zfNQfRqSg7lxh_e5vii8OuL_u8WIpTFbGWXr9Zs_13-I3diWcociZgcwJqiI4dtZF_U0DMWHxlJVU2hk"
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=New+grad+Software+Engineer+-+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2ULMEBagzBYykbGYy_fEU5fPDf_aNmVs3H0a4Ov6EKMslZ1Z8ZRg-L3ibXHGBzt_ZTIGRZq1y2HmrW1tvs67LPUvUSzUgT3a3_sfWMv1SFglzBwGfTCdsaPI-mOnmmWYiuqNefF&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQxKsJegQIcBAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=New+grad+Software+Engineer+-+Remote&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4vT_jst3FNPSseSaNZzK__8z1v7aTjpkrjxt4ZEdCnF1Hw-UevzhHgkw6eCazQOzhCzXwRmn6H4CMzsyldqz9Qg6o2Nj8jWCCJZQ626Yd2ULMEBagzBYykbGYy_fEU5fPDf_aNmVs3H0a4Ov6EKMslZ1Z8ZRg-L3ibXHGBzt_ZTIGRZq1y2HmrW1tvs67LPUvUSzUgT3a3_sfWMv1SFglzBwGfTCdsaPI-mOnmmWYiuqNefF"
     }
   ],
-  "top_stories_link": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&udm=8&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ3L8LegQINBAN",
+  "top_stories_link": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&udm=8&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ3L8LegQIKhAN",
   "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote",
   "related_searches": [
     {
       "block_position": 1,
       "query": "Software engineer remote jobs",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+engineer+remote+jobs&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAhTEAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+engineer+remote+jobs&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAhFEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+engineer+remote+jobs"
     },
     {
       "block_position": 1,
       "query": "Software Engineer Remote jobs Entry level",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+Engineer+Remote+jobs+Entry+level&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAhSEAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+Engineer+Remote+jobs+Entry+level&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAhEEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+Engineer+Remote+jobs+Entry+level"
     },
     {
       "block_position": 1,
       "query": "Software engineer remote work from home",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+engineer+remote+work+from+home&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAhNEAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+engineer+remote+work+from+home&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAhDEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+engineer+remote+work+from+home"
     },
     {
       "block_position": 1,
       "query": "Software engineer remote salary",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Software+engineer+remote+salary&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAhFEAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Software+engineer+remote+salary&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAhGEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Software+engineer+remote+salary"
     },
     {
       "block_position": 1,
       "query": "Remote Software Engineer jobs worldwide",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Remote+Software+Engineer+jobs+worldwide&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAhEEAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Remote+Software+Engineer+jobs+worldwide&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAhCEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Remote+Software+Engineer+jobs+worldwide"
     },
     {
       "block_position": 1,
       "query": "Best remote software engineer companies",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Best+remote+software+engineer+companies&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAg_EAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Best+remote+software+engineer+companies&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAg9EAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Best+remote+software+engineer+companies"
     },
     {
       "block_position": 1,
       "query": "Remote Software Engineer jobs USA",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=Remote+Software+Engineer+jobs+USA&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAg5EAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=Remote+Software+Engineer+jobs+USA&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAg3EAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=Remote+Software+Engineer+jobs+USA"
     },
     {
       "block_position": 1,
       "query": "New grad Software Engineer - Remote",
-      "link": "https://www.google.com/search?sca_esv=9c7ec454ad9eda0c&q=New+grad+Software+Engineer+-+Remote&sa=X&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ1QJ6BAg4EAE",
+      "link": "https://www.google.com/search?sca_esv=f4db438c9f87a94d&q=New+grad+Software+Engineer+-+Remote&sa=X&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ1QJ6BAgxEAE",
       "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=United+States&q=New+grad+Software+Engineer+-+Remote"
     }
   ],
   "pagination": {
     "current": 1,
-    "next": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=10&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8NMDegQICxAW",
+    "next": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=10&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8NMDegQIChAW",
     "other_pages": {
-      "2": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=10&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAE",
-      "3": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=20&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAG",
-      "4": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=30&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAI",
-      "5": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=40&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAK",
-      "6": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=50&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAM",
-      "7": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=60&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAO",
-      "8": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=70&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAQ",
-      "9": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=80&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAS",
-      "10": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=9c7ec454ad9eda0c&ei=FiAKaMKcJsiOwbkP7-vQqQg&start=90&sa=N&sstk=Af40H4UfeWPn55gygPZIKkK6ZPjiyxD5ZqhXKs62dSuXDH_wS4X5S7qMHAKYU5sMDzNuTdg-9-vfY43fhBv4_mY1IBb1rgQQfHokXA&ved=2ahUKEwjC_4SByPCMAxVIRzABHe81NIUQ8tMDegQICxAU"
+      "2": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=10&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=20&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=30&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=40&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=50&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=60&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=70&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=80&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=Software+Engineer+Remote&sca_esv=f4db438c9f87a94d&ei=oVMKaNnEGZK4wPAPmZPnyAo&start=90&sa=N&sstk=Af40H4Vz_hAzV6qHdedMnp1lEQ2wtmZCQL59BWYWuIvYsC5gQu6ER_dqzgZdxf4Gv79WsWsxfBhi92-emcn2LJDWiUra_yUUiB7IHQ&ved=2ahUKEwiZmeeU-fCMAxUSHBAIHZnJGakQ8tMDegQIChAU"
     }
   },
   "serpapi_pagination": {

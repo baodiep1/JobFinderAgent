@@ -1,9 +1,17 @@
 ﻿import os
 import PyPDF2
-from .tool import Tool
+from smolagents import tool
 
+@tool
 def extract_text_from_pdf(pdf_path: str) -> str:
-    """Extracts text from a PDF file."""
+    """Extracts text from a PDF file.
+    
+    Args:
+        pdf_path: The path to the PDF file to extract text from.
+        
+    Returns:
+        The extracted text from the PDF file as a string.
+    """
     if not os.path.exists(pdf_path):
         raise FileNotFoundError(f"PDF file not found at {pdf_path}")
 
@@ -31,6 +39,7 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     print(f"\nTotal extracted characters: {len(cleaned_text)}")
     return cleaned_text
 
+"""
 pdf_extractor_tool = Tool(
     name="PDF Text Extractor",
     description="Extracts text content from PDF files.",
@@ -38,3 +47,4 @@ pdf_extractor_tool = Tool(
     arguments=[("pdf_path", "str")],
     outputs="str"
 )
+"""

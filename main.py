@@ -1,32 +1,38 @@
 ﻿import os
 import json
+from huggingface_hub import login
 from pathlib import Path
 from dotenv import load_dotenv
-from tools.google_search import google_search_tool
-from tools.pdf_extractor import pdf_extractor_tool
+from tools.google_search import search_google_jobs
+from tools.pdf_extractor import extract_text_from_pdf
+from smolagents import CodeAgent, HfApiModel
 
-# Load environment variables with explicit path
+
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
-# Debug environment loading
-print(f"\nEnvironment Debug:")
-print(f"Loading .env from: {env_path.absolute()}")
-print(f"SERPAPI_KEY exists: {os.getenv('SERPAPI_KEY') is not None}")
-print(f"Current directory: {os.getcwd()}")
-print(f"Files in directory: {os.listdir('.')}\n")
 
 def run():
-    system_message = """You are an AI assistant designed to help users find job opportunities that best match their experience and skills. Your primary goal is to analyze the user's CV and retrieve job listings that are highly relevant.
 
-You have access to the following tools:
-Tool Name: google_search_tool, Description: Searches for job postings based on extracted keywords and location on google., Arguments: keywords: list, location: str, Outputs: list of job listings
+    # Read system prompt from file
+    prompt_path = Path(__file__).parent / "system_prompt.txt"
+    with open(prompt_path, "r") as f:
+        system_prompt = f.read()
 
-You should think step by step in order to fulfill the objective with a reasoning process divided into Thought/Action/Observation steps that can be repeated multiple times if needed.
+    cv_path = "test_files/sample_cv.pdf"
+    if not os.path.exists(cv_path):
+        cv_path = "test_files/real_resume.pdf"
+            
+    cv_text = extract_text_from_pdf(cv_path)
 
-You should first reflect on the current situation using `Thought: {your_thoughts}`, then (if necessary), call a tool with the proper JSON formatting `Action: {JSON_BLOB}`, or print your final answer starting with the prefix `Final Answer:`
-"""
 
+
+    agent = CodeAgent(tools=[search_google_jobs], model=HfApiModel())
+
+    agent.run(system_prompt + "cv_text: " + cv_text)
+
+
+    """
     try:
         cv_path = "test_files/resume-sample.pdf"
         if not os.path.exists(cv_path):
@@ -35,8 +41,9 @@ You should first reflect on the current situation using `Thought: {your_thoughts
         cv_text = pdf_extractor_tool(cv_path)
         print(f"\nExtracted CV ({len(cv_text)} chars):")
         print("-" * 50)
-        print(cv_text[:300] + "...")
+        print(cv_text)
         print("-" * 50)
+        print()
 
         # Generate smarter query from CV text
         skills = ["python", "nlp", "machine learning", "ai"]
@@ -68,5 +75,10 @@ You should first reflect on the current situation using `Thought: {your_thoughts
             print("2. It contains: SERPAPI_KEY=your_actual_key")
             print("3. The file isn't listed in .gitignore")
 
+               """
+    
 if __name__ == "__main__":
+
+
+    login()
     run()
