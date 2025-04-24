@@ -2,6 +2,7 @@ import os
 import json
 from dotenv import load_dotenv
 from tools.google_search import google_search_tool
+from tools.pdf_extractor import pdf_extractor_tool
 
 load_dotenv()
 
@@ -17,13 +18,19 @@ You should think step by step in order to fulfill the objective with a reasoning
 You should first reflect on the current situation using `Thought: {your_thoughts}`, then (if necessary), call a tool with the proper JSON formatting `Action: {JSON_BLOB}`, or print your final answer starting with the prefix `Final Answer:`
 """
 
+    try:
+        cv_text = pdf_extractor_tool("test_files/sample_cv.pdf")
+        print(f"Extracted CV text ({len(cv_text)} chars): {cv_text[:200]}...")
+        
+        query = "Software Engineer NLP Remote"
+        results = google_search_tool(query, "United States")
 
-    query = "Software Engineer NLP Remote"
-    results = google_search_tool(query, "United States")
-
-    with open("search_results.json", "w") as f:
-        json.dump(results, f, indent=2)
-
+        with open("search_results.json", "w") as f:
+            json.dump(results, f, indent=2)
+            
+    except Exception as e:
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
     run()
+    
