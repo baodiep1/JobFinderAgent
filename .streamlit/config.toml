@@ -1,0 +1,5 @@
+[server]
+maxUploadSize = 25
+
+[runner]
+memory = 1GB
