@@ -3,15 +3,10 @@ import os
 import re
 import spacy
 import nltk
-from pathlib import Path
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from tools.pdf_extractor import extract_text_from_pdf
 from tools.google_search import search_google_jobs
-
-# Load model from local folder
-MODEL_PATH = Path(__file__).parent / "models/en_core_web_sm/en_core_web_sm-3.8.0"
-nlp = spacy.load(str(MODEL_PATH))
 
 # Download necessary NLTK data
 try:
