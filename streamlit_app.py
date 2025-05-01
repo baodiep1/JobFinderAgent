@@ -1,45 +1,123 @@
 import streamlit as st
 
-# Set page config must be the first Streamlit command
+# Must be the first Streamlit command
 st.set_page_config(page_title="JobFinderAgent", layout="wide")
+
+# Run setup first
+try:
+    import setup
+    setup.install_dependencies()
+except Exception as e:
+    st.warning(f"Setup script error: {str(e)}")
+    st.info("Continuing without full setup...")
 
 import os
 import re
+import sys
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from tools.pdf_extractor import extract_text_from_pdf
-from tools.google_search import search_google_jobs
 
-# Display a loading message while SpaCy loads
-loading_message = st.empty()
-loading_message.info("Loading NLP models... This may take a moment.")
+# Try to import necessary components
+try:
+    from tools.pdf_extractor import extract_text_from_pdf
+except Exception as e:
+    st.error(f"Error importing PDF extractor: {str(e)}")
+    
+try:
+    from tools.google_search import search_google_jobs
+except Exception as e:
+    st.error(f"Error importing search tool: {str(e)}")
 
-# Import and load SpaCy
+# Initialize NLP - with fallbacks if SpaCy isn't available
+nlp_available = False
 try:
     import spacy
-    # Assume SpaCy model is already installed via requirements.txt
     try:
+        # Try to load the model
         nlp = spacy.load("en_core_web_sm")
-        loading_message.empty()  # Clear the loading message when done
-    except OSError as e:
-        loading_message.error(f"Error loading SpaCy model: {str(e)}")
-        st.error("Could not load NLP model. Please contact support.")
-        st.stop()
+        nlp_available = True
+    except OSError:
+        # If model not found, try to load it from Python path
+        try:
+            import en_core_web_sm
+            nlp = en_core_web_sm.load()
+            nlp_available = True
+        except ImportError:
+            st.warning("SpaCy model not available. Some advanced features will be limited.")
+            # Create a minimal placeholder to avoid errors
+            nlp = None
 except Exception as e:
-    loading_message.error(f"Unable to load SpaCy: {str(e)}")
-    st.stop()  # Stop the app if SpaCy can't be loaded
+    st.warning(f"SpaCy not available: {str(e)}")
+    nlp = None
 
-# Download necessary NLTK data - keep this as it's usually allowed
+# Ensure NLTK data is available
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
 except LookupError:
-    nltk.download('punkt')
-    nltk.download('stopwords')
+    try:
+        nltk.download('punkt')
+        nltk.download('stopwords')
+    except:
+        st.warning("NLTK data couldn't be downloaded. Some features may not work.")
 
+# Simplified skill extraction that doesn't require SpaCy
+def extract_skills_simple(cv_text):
+    """Extract skills from CV text using basic text matching"""
+    technical_skills = [
+        # Programming languages
+        "python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", 
+        "kotlin", "go", "rust", "typescript", "html", "css", "sql", "r", 
+        "matlab", "scala", "perl", "bash", "shell", "assembly",
+        
+        # Frameworks and libraries
+        "react", "angular", "vue", "django", "flask", "spring", 
+        "tensorflow", "pytorch", "keras", "pandas", "numpy", "bootstrap",
+        
+        # Databases
+        "mysql", "postgresql", "mongodb", "oracle", "sql server", "sqlite",
+        "redis", "firebase",
+        
+        # Cloud platforms
+        "aws", "azure", "google cloud", "heroku",
+        
+        # DevOps
+        "docker", "kubernetes", "jenkins", "git", "github", "gitlab", 
+        "terraform",
+        
+        # Other technical
+        "machine learning", "deep learning", "artificial intelligence", 
+        "data science", "big data", "data analysis",
+        "nlp", "computer vision", "object-oriented programming"
+    ]
+    
+    # Prepare text
+    cv_text_lower = cv_text.lower()
+    
+    # Extract skills
+    skills = set()
+    
+    # Direct matching with our predefined list
+    for skill in technical_skills:
+        if skill in cv_text_lower:
+            skills.add(skill)
+    
+    return list(skills)
+
+# Main function to extract skills - uses SpaCy if available, otherwise falls back
 def extract_skills_from_cv(cv_text):
-    """Extract skills from CV text using NLP"""
+    """Extract skills from CV text using NLP if available, otherwise using simple matching"""
+    if nlp_available and nlp is not None:
+        # Use the full extraction with SpaCy
+        return extract_skills_full(cv_text, nlp)
+    else:
+        # Fall back to simple extraction
+        return extract_skills_simple(cv_text)
+
+# Full skill extraction with SpaCy
+def extract_skills_full(cv_text, nlp_model):
+    """Extract skills from CV text using full NLP capabilities"""
     technical_skills = [
         # Programming languages
         "python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", 
@@ -88,7 +166,7 @@ def extract_skills_from_cv(cv_text):
     filtered_tokens = [token for token in tokens if token not in stop_words and len(token) > 2]
     
     # Process with SpaCy for more advanced extraction
-    doc = nlp(cv_text)
+    doc = nlp_model(cv_text)
     
     # Extract skills
     skills = set()
@@ -127,19 +205,38 @@ def extract_skills_from_cv(cv_text):
     
     return list(skills)
 
-def extract_location_from_cv(cv_text, nlp_model):
-    """Extract location information from CV text using NLP
+# Simplified location extraction that doesn't require SpaCy
+def extract_location_simple(cv_text):
+    """Extract location information from CV text using regex"""
+    # Default location if nothing is found
+    default_location = "United States"
     
-    This function uses NLP to extract just the location information from resume text,
-    separating it from any personal information like names.
+    # Look for pattern "City, State" where State is a two-letter code
+    city_state_pattern = re.compile(r'([A-Za-z\s]+),\s*([A-Z]{2})')
+    matches = city_state_pattern.findall(cv_text)
     
-    Args:
-        cv_text: Text extracted from the resume
-        nlp_model: SpaCy NLP model
-        
-    Returns:
-        String containing location in optimal search format
-    """
+    if matches:
+        # Take the last part before comma as the city and the part after as state
+        city, state = matches[0]
+        city_words = city.strip().split()
+        # Use the last word if there are multiple words (handles "First Last City, ST")
+        if len(city_words) > 1:
+            city = city_words[-1]
+        return f"{city.strip()}, {state.strip()}"
+    
+    return default_location
+
+# Main location extraction function with fallback
+def extract_location_from_cv(cv_text):
+    """Extract location with NLP if available, otherwise use simple regex"""
+    if nlp_available and nlp is not None:
+        return extract_location_full(cv_text, nlp)
+    else:
+        return extract_location_simple(cv_text)
+
+# Full location extraction with SpaCy
+def extract_location_full(cv_text, nlp_model):
+    """Extract location information using NLP"""
     # Default location if nothing is found
     default_location = "United States"
     
@@ -199,18 +296,7 @@ def extract_location_from_cv(cv_text, nlp_model):
     return default_location
 
 def clean_location_for_search(location_input):
-    """Clean up location format for optimal searching
-    
-    Takes any location string and formats it properly for search APIs.
-    Handles common issues like multiple words before comma that might
-    include personal information.
-    
-    Args:
-        location_input: Raw location string that might need cleaning
-        
-    Returns:
-        Cleaned location string suitable for search API
-    """
+    """Clean up location format for optimal searching"""
     # Handle empty case
     if not location_input:
         return "United States"
@@ -346,7 +432,7 @@ def run_streamlit_app():
                     experience = []
                 
                 # Extract and clean location using NLP
-                raw_location = extract_location_from_cv(cv_text, nlp)
+                raw_location = extract_location_from_cv(cv_text)
                 location = clean_location_for_search(raw_location)
                 
                 # Display extracted information
@@ -534,6 +620,7 @@ def run_streamlit_app():
                 
         except Exception as e:
             st.error(f"Error processing PDF: {str(e)}")
+            st.write("Please check that your PDF is valid and try again.")
     
     else:
         st.info("Please upload your CV to get started")
