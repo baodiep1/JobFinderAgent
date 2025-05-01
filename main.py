@@ -27,7 +27,7 @@ def run():
 
 
 
-    agent = CodeAgent(tools=[search_google_jobs], model=HfApiModel())
+    agent = CodeAgent(tools=[search_google_jobs], model=HfApiModel(model_name="gpt2"))
 
     agent.run(system_prompt + "cv_text: " + cv_text)
 
