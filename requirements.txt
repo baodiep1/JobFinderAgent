@@ -3,5 +3,5 @@ python-dotenv
 google-search-results
 pdfplumber>=0.9.0
 nltk>=3.8.1
-spacy>=3.6.0
+spacy
 PyPDF2
