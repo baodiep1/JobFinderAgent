@@ -15,23 +15,22 @@ from tools.google_search import search_google_jobs
 loading_message = st.empty()
 loading_message.info("Loading NLP models... This may take a moment.")
 
-# Import and load SpaCy after setting page config
+# Import and load SpaCy
 try:
     import spacy
+    # Assume SpaCy model is already installed via requirements.txt
     try:
         nlp = spacy.load("en_core_web_sm")
         loading_message.empty()  # Clear the loading message when done
-    except OSError:
-        loading_message.warning("SpaCy model not found. Downloading model (this may take a moment)...")
-        import spacy.cli
-        spacy.cli.download("en_core_web_sm")
-        nlp = spacy.load("en_core_web_sm")
-        loading_message.empty()  # Clear the loading message when done
+    except OSError as e:
+        loading_message.error(f"Error loading SpaCy model: {str(e)}")
+        st.error("Could not load NLP model. Please contact support.")
+        st.stop()
 except Exception as e:
-    loading_message.error(f"Unable to load SpaCy model. Please check your installation.")
+    loading_message.error(f"Unable to load SpaCy: {str(e)}")
     st.stop()  # Stop the app if SpaCy can't be loaded
 
-# Download necessary NLTK data
+# Download necessary NLTK data - keep this as it's usually allowed
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
