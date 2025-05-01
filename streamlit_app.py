@@ -20,13 +20,12 @@ except LookupError:
 try:
     nlp = spacy.load("en_core_web_sm")
 except:
-    st.warning("Downloading SpaCy model... This may take a minute.")
+    st.warning("Downloading SpaCy model...")
     os.system("python -m spacy download en_core_web_sm")
     nlp = spacy.load("en_core_web_sm")
 
 def extract_skills_from_cv(cv_text):
-    """Extract skills from CV text using NLP techniques"""
-    # Common technical skills to look for
+    """Extract skills from CV text using NLP"""
     technical_skills = [
         # Programming languages
         "python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", 
@@ -95,7 +94,7 @@ def extract_skills_from_cv(cv_text):
     
     # Method 3: Extract multi-word technical skills like "machine learning"
     for skill in technical_skills:
-        if " " in skill:  # It's a multi-word skill
+        if " " in skill:
             if skill in cv_text_lower:
                 skills.add(skill)
     
@@ -104,8 +103,6 @@ def extract_skills_from_cv(cv_text):
     for section in sections:
         section_lower = section.lower()
         if any(header in section_lower for header in ["skill", "technical", "technology", "tools", "proficiency"]):
-            # This section likely contains skills
-            # Extract lines and words
             lines = section.split('\n')
             for line in lines:
                 words = line.split()
@@ -193,7 +190,6 @@ def generate_search_query(skills, education, experience):
     primary_job = job_titles[0] if job_titles else "entry level"
     top_skills = skills[:3] if len(skills) >= 3 else skills
     
-    # Generate query
     query = f"{primary_job} jobs {' '.join(top_skills)}"
     
     return query
@@ -227,7 +223,6 @@ def run_streamlit_app():
             
             # Process the CV
             with st.spinner("Analyzing your resume..."):
-                # Extract information
                 skills = extract_skills_from_cv(cv_text)
                 education = extract_education(cv_text)
                 experience = extract_experience(cv_text)
