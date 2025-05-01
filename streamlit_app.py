@@ -1,12 +1,35 @@
 import streamlit as st
+
+# Set page config must be the first Streamlit command
+st.set_page_config(page_title="JobFinderAgent", layout="wide")
+
 import os
 import re
-import spacy
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from tools.pdf_extractor import extract_text_from_pdf
 from tools.google_search import search_google_jobs
+
+# Display a loading message while SpaCy loads
+loading_message = st.empty()
+loading_message.info("Loading NLP models... This may take a moment.")
+
+# Import and load SpaCy after setting page config
+try:
+    import spacy
+    try:
+        nlp = spacy.load("en_core_web_sm")
+        loading_message.empty()  # Clear the loading message when done
+    except OSError:
+        loading_message.warning("SpaCy model not found. Downloading model (this may take a moment)...")
+        import spacy.cli
+        spacy.cli.download("en_core_web_sm")
+        nlp = spacy.load("en_core_web_sm")
+        loading_message.empty()  # Clear the loading message when done
+except Exception as e:
+    loading_message.error(f"Unable to load SpaCy model. Please check your installation.")
+    st.stop()  # Stop the app if SpaCy can't be loaded
 
 # Download necessary NLTK data
 try:
@@ -15,19 +38,6 @@ try:
 except LookupError:
     nltk.download('punkt')
     nltk.download('stopwords')
-
-# Load SpaCy model
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    try:
-        st.warning("Loading SpaCy model...")
-        
-        import en_core_web_sm
-        nlp = en_core_web_sm.load()
-    except ImportError:
-        st.error("Unable to load SpaCy model. Please check your installation.")
-        nlp = spacy.blank("en")
 
 def extract_skills_from_cv(cv_text):
     """Extract skills from CV text using NLP"""
@@ -278,7 +288,7 @@ def generate_search_query(skills, education, experience):
     return query
 
 def run_streamlit_app():
-    st.set_page_config(page_title="JobFinderAgent", layout="wide")
+    # Display title and introduction - st.set_page_config is already called at the top
     st.title("JobFinderAgent - Resume Analysis & Job Matching Platform")
     st.markdown("*Intelligent resume parsing and job search powered by NLP*")
     
