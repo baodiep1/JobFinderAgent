@@ -19,9 +19,10 @@ except LookupError:
 # Load SpaCy model
 try:
     nlp = spacy.load("en_core_web_sm")
-except:
-    st.warning("Downloading SpaCy model...")
-    os.system("python -m spacy download en_core_web_sm")
+except OSError:
+    st.warning("SpaCy model not found. Downloading model (this may take a moment)...")
+    import spacy.cli
+    spacy.cli.download("en_core_web_sm")
     nlp = spacy.load("en_core_web_sm")
 
 def extract_skills_from_cv(cv_text):
@@ -275,6 +276,7 @@ def generate_search_query(skills, education, experience):
 def run_streamlit_app():
     st.set_page_config(page_title="JobFinderAgent", layout="wide")
     st.title("JobFinderAgent - Resume Analysis & Job Matching Platform")
+    st.markdown("*Intelligent resume parsing and job search powered by NLP*")
     
     # Initialize session state
     if 'alt_search' not in st.session_state:
