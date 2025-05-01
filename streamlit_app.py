@@ -20,10 +20,14 @@ except LookupError:
 try:
     nlp = spacy.load("en_core_web_sm")
 except OSError:
-    st.warning("SpaCy model not found. Downloading model (this may take a moment)...")
-    import spacy.cli
-    spacy.cli.download("en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
+    try:
+        st.warning("Loading SpaCy model...")
+        
+        import en_core_web_sm
+        nlp = en_core_web_sm.load()
+    except ImportError:
+        st.error("Unable to load SpaCy model. Please check your installation.")
+        nlp = spacy.blank("en")
 
 def extract_skills_from_cv(cv_text):
     """Extract skills from CV text using NLP"""
