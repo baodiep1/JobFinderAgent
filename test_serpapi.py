@@ -1,4 +1,3 @@
-# Try different import approaches
 try:
     from serpapi import GoogleSearch
     print("Successfully imported GoogleSearch from serpapi")
@@ -12,7 +11,6 @@ try:
 except ImportError as e:
     print(f"Error importing serpapi module: {e}")
 
-# Show installed packages
 import subprocess
 print("\nInstalled packages:")
 result = subprocess.run(["pip", "list"], capture_output=True, text=True)
