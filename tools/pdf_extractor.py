@@ -8,23 +8,23 @@ from smolagents import tool
 def format_extracted_text(text):
     """Enhances extracted text readability by applying better formatting."""
     # Basic cleanup
-    text = re.sub(r'\s+', ' ', text)  # Removes excessive whitespace
+    text = re.sub(r'\s+', ' ', text) # Removes excessive whitespace
     
     # Fix common spacing issues
-    text = text.replace(" | ", "\n")  # Separates sections properly
+    text = text.replace(" | ", "\n") # Separates sections properly
     
     # Add spacing between words that were merged during PDF extraction
-    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)  # Insert space between camelCase
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text) # Insert space between camelCase
     
     # Improve section headers
-    text = text.replace("Education", "\n📚 Education\n")  # Highlights education section
-    text = text.replace("Experience", "\n💼 Experience\n")  # Highlights experience section
-    text = text.replace("Skills", "\n🛠 Skills\n")  # Highlights skills section
-    text = text.replace("Projects", "\n🔧 Projects\n")  # Highlights projects section
+    text = text.replace("Education", "\n📚 Education\n") # Highlights education section
+    text = text.replace("Experience", "\n💼 Experience\n") # Highlights experience section
+    text = text.replace("Skills", "\n🛠 Skills\n") # Highlights skills section
+    text = text.replace("Projects", "\n🔧 Projects\n") # Highlights projects section
     
     # Fix common spacing problems
-    text = text.replace(",", ", ")  # Add space after commas
-    text = re.sub(r'(\d)([A-Za-z])', r'\1 \2', text)  # Space between numbers and letters
+    text = text.replace(",", ", ") # Add space after commas
+    text = re.sub(r'(\d)([A-Za-z])', r'\1 \2', text) # Space between numbers and letters
     
     return text.strip()
 
@@ -66,7 +66,7 @@ def extract_skills_from_text(text):
     
     # Extract words with fallback mechanism
     try:
-        # Try to use NLTK's word_tokenize function
+        # Use NLTK's word_tokenize function
         words = word_tokenize(text_lower)
     except (LookupError, ImportError, AttributeError):
         # Fallback tokenization if NLTK resources aren't available
