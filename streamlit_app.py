@@ -387,7 +387,7 @@ def run_streamlit_app():
         os.environ["SERPAPI_KEY"] = api_key
     
     # Debug mode toggle - default to True for troubleshooting
-    debug_mode = st.sidebar.checkbox("Debug Mode", value=True)
+    debug_mode = st.sidebar.checkbox("Debug Mode", value=False)
     
     # Check requirements if in debug mode
     if debug_mode:
@@ -561,7 +561,7 @@ def run_streamlit_app():
                                 # Process the results
                                 elif "organic_results" in results and results["organic_results"]:
                                     logger.info(f"Processing {len(results['organic_results'])} organic results")
-                                    jobs = results["organic_results"][:8]  # Top 8 results
+                                    jobs = results["organic_results"][:8] # Top 8 results
                                     
                                     job_count = 0
                                     for i, job in enumerate(jobs, 1):
@@ -570,7 +570,7 @@ def run_streamlit_app():
                                         link = job.get('link', '').lower()
                                         snippet = job.get('snippet', '').lower()
                                         
-                                        # Check if result is likely a job posting (relaxed criteria)
+                                        # Check if result is likely a job posting
                                         is_job = (
                                             'job' in title or 'career' in title or 'position' in title or
                                             'developer' in title or 'engineer' in title or 'programmer' in title or
@@ -578,7 +578,7 @@ def run_streamlit_app():
                                             'glassdoor.com/job' in link or 'apply' in snippet
                                         )
                                         
-                                        if is_job or debug_mode:  # Show all results in debug mode
+                                        if is_job or debug_mode: # Show all results in debug mode
                                             job_count += 1
                                             with st.container():
                                                 col1, col2 = st.columns([1, 3])
