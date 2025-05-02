@@ -64,8 +64,14 @@ def extract_skills_from_text(text):
     # Convert to lowercase for matching
     text_lower = text.lower()
     
-    # Extract words and phrases
-    words = word_tokenize(text_lower)
+    # Extract words with fallback mechanism
+    try:
+        # Try to use NLTK's word_tokenize function
+        words = word_tokenize(text_lower)
+    except (LookupError, ImportError, AttributeError):
+        # Fallback tokenization if NLTK resources aren't available
+        # Simple regex to split on non-word characters
+        words = re.findall(r'\b\w+\b', text_lower)
     
     # Find skills mentioned in the text
     extracted_skills = []
@@ -194,11 +200,31 @@ def extract_text_from_pdf(pdf_path: str) -> dict:
     formatted_text = format_extracted_text(raw_text)
     
     # Extract skills from the formatted text
-    extracted_skills = extract_skills_from_text(formatted_text)
+    try:
+        # First try the normal extraction
+        extracted_skills = extract_skills_from_text(formatted_text)
+    except Exception as e:
+        # If any error occurs, use a simple fallback approach
+        print(f"Warning: Skill extraction failed, using fallback method. Error: {str(e)}")
+        extracted_skills = []
+        text_lower = formatted_text.lower()
+        technical_skills = ["python", "java", "javascript", "html", "css", "react", "node.js", 
+                          "sql", "data science", "machine learning", "aws", "docker"]
+        
+        for skill in technical_skills:
+            if skill in text_lower:
+                extracted_skills.append(skill)
     
-    # Parse sections
-    education = extract_education_section(formatted_text)
-    experience = extract_experience_section(formatted_text)
+    # Parse sections with error handling
+    try:
+        education = extract_education_section(formatted_text)
+    except Exception:
+        education = []
+    
+    try:
+        experience = extract_experience_section(formatted_text)
+    except Exception:
+        experience = []
     
     return {
         "text": formatted_text, 
