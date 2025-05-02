@@ -1,1 +1,11 @@
+libcairo2
+liblcms2-2
+libnspr4
+libnss3
+libopenjp2-7
+libpixman-1-0
+libpoppler102
+libxcb-render0
+libxcb-shm0
+libxrender1
 poppler-utils
