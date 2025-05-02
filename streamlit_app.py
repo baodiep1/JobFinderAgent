@@ -8,8 +8,15 @@ import re
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from pathlib import Path
+import tempfile
 from tools.pdf_extractor import extract_text_from_pdf
 from tools.google_search import search_google_jobs
+
+# Create a data directory in a writable location for NLTK
+nltk_data_dir = Path("./nltk_data")
+nltk_data_dir.mkdir(exist_ok=True)
+nltk.data.path.append(str(nltk_data_dir))
 
 # Display a loading message while SpaCy loads
 loading_message = st.empty()
@@ -18,25 +25,65 @@ loading_message.info("Loading NLP models... This may take a moment.")
 # Import and load SpaCy
 try:
     import spacy
-    # Assume SpaCy model is already installed via requirements.txt
+    # Try loading the model with detailed error reporting
     try:
         nlp = spacy.load("en_core_web_sm")
         loading_message.empty()  # Clear the loading message when done
     except OSError as e:
         loading_message.error(f"Error loading SpaCy model: {str(e)}")
-        st.error("Could not load NLP model. Please contact support.")
-        st.stop()
+        
+        # Add fallback options
+        try:
+            # Try finding the model in different locations
+            model_paths = spacy.util.get_model_meta("en_core_web_sm").get("shortcuts", [])
+            if model_paths:
+                st.info(f"Trying alternative model path: {model_paths[0]}")
+                nlp = spacy.load(model_paths[0])
+                loading_message.empty()
+            else:
+                raise ValueError("Could not find model paths")
+        except Exception as inner_e:
+            st.error(f"Could not load NLP model: {str(e)}, {str(inner_e)}")
+            st.error("Please contact support.")
+            st.stop()
 except Exception as e:
     loading_message.error(f"Unable to load SpaCy: {str(e)}")
     st.stop()  # Stop the app if SpaCy can't be loaded
 
-# Download necessary NLTK data - keep this as it's usually allowed
+# Download necessary NLTK data with better error handling
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
 except LookupError:
-    nltk.download('punkt')
-    nltk.download('stopwords')
+    with st.spinner("Downloading language resources..."):
+        nltk.download('punkt', download_dir=str(nltk_data_dir))
+        nltk.download('stopwords', download_dir=str(nltk_data_dir))
+
+def check_requirements():
+    """Check if all required components are available"""
+    try:
+        # Check SpaCy
+        import spacy
+        models = spacy.util.get_installed_models()
+        st.sidebar.success(f"✅ SpaCy installed. Models: {', '.join(models)}")
+        
+        # Check NLTK
+        import nltk
+        try:
+            nltk.data.find('tokenizers/punkt')
+            nltk.data.find('corpora/stopwords')
+            st.sidebar.success("✅ NLTK data available")
+        except LookupError:
+            st.sidebar.warning("⚠️ NLTK data missing, will download")
+        
+        # Check PDF processing
+        import pdfplumber
+        st.sidebar.success("✅ PDF processing available")
+        
+        return True
+    except Exception as e:
+        st.sidebar.error(f"❌ Requirements check failed: {str(e)}")
+        return False
 
 def extract_skills_from_cv(cv_text):
     """Extract skills from CV text using NLP"""
@@ -307,233 +354,256 @@ def run_streamlit_app():
     # Debug mode toggle
     debug_mode = st.sidebar.checkbox("Debug Mode", value=False)
     
+    # Check requirements if in debug mode
+    if debug_mode:
+        requirements_ok = check_requirements()
+        if not requirements_ok:
+            st.warning("Some requirements failed the check. App may not function correctly.")
+    
     # File upload
     uploaded_file = st.file_uploader("Upload your resume/CV (PDF format)", type="pdf")
     
     if uploaded_file:
-        # Save temp file
-        with open("temp_cv.pdf", "wb") as f:
-            f.write(uploaded_file.getbuffer())
-        
-        # Extract text
+        # Save uploaded file to a temporary file with better error handling
         try:
-            # Get result from PDF extractor - now a dictionary with multiple keys
-            pdf_result = extract_text_from_pdf("temp_cv.pdf")
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
+                temp_file.write(uploaded_file.getbuffer())
+                temp_path = temp_file.name
             
-            # Extract the actual text string from the dictionary
-            cv_text = pdf_result['text']
-            
-            # Display extracted text
-            with st.expander("Extracted CV Text"):
-                st.text(cv_text)
-            
-            # Process the CV
-            with st.spinner("Analyzing your resume..."):
-                # Use pre-extracted information if available
-                if 'skills' in pdf_result and pdf_result['skills']:
-                    skills = pdf_result['skills']
-                else:
-                    skills = extract_skills_from_cv(cv_text)
+            # Extract text
+            try:
+                # Get result from PDF extractor - now a dictionary with multiple keys
+                pdf_result = extract_text_from_pdf(temp_path)
                 
-                if 'education' in pdf_result and pdf_result['education']:
-                    education = pdf_result['education']
-                else:
-                    education = []
+                # Extract the actual text string from the dictionary
+                cv_text = pdf_result['text']
                 
-                if 'experience' in pdf_result and pdf_result['experience']:
-                    experience = pdf_result['experience']
-                else:
-                    experience = []
+                # Display extracted text
+                with st.expander("Extracted CV Text"):
+                    st.text(cv_text)
                 
-                # Extract and clean location using NLP
-                raw_location = extract_location_from_cv(cv_text, nlp)
-                location = clean_location_for_search(raw_location)
-                
-                # Display extracted information
-                st.subheader("Extracted Information")
-                
-                col1, col2, col3 = st.columns([2, 2, 1])
-                
-                with col1:
-                    st.markdown("**Skills:**")
-                    st.write(", ".join(skills) if skills else "No skills detected")
+                # Process the CV
+                with st.spinner("Analyzing your resume..."):
+                    # Use pre-extracted information if available
+                    if 'skills' in pdf_result and pdf_result['skills']:
+                        skills = pdf_result['skills']
+                    else:
+                        skills = extract_skills_from_cv(cv_text)
                     
-                    st.markdown("**Education:**")
-                    for edu in education:
-                        st.write(f"- {edu}")
-                    if not education:
-                        st.write("No education details detected")
+                    if 'education' in pdf_result and pdf_result['education']:
+                        education = pdf_result['education']
+                    else:
+                        education = []
+                    
+                    if 'experience' in pdf_result and pdf_result['experience']:
+                        experience = pdf_result['experience']
+                    else:
+                        experience = []
+                    
+                    # Extract and clean location using NLP
+                    raw_location = extract_location_from_cv(cv_text, nlp)
+                    location = clean_location_for_search(raw_location)
+                    
+                    # Display extracted information
+                    st.subheader("Extracted Information")
+                    
+                    col1, col2, col3 = st.columns([2, 2, 1])
+                    
+                    with col1:
+                        st.markdown("**Skills:**")
+                        st.write(", ".join(skills) if skills else "No skills detected")
+                        
+                        st.markdown("**Education:**")
+                        for edu in education:
+                            st.write(f"- {edu}")
+                        if not education:
+                            st.write("No education details detected")
+                    
+                    with col2:
+                        st.markdown("**Experience:**")
+                        for exp in experience:
+                            st.write(f"- {exp}")
+                        if not experience:
+                            st.write("No experience details detected")
+                    
+                    with col3:
+                        st.markdown("**Location:**")
+                        st.write(location)
+                    
+                    # Generate search query
+                    default_query = generate_search_query(skills, education, experience)
                 
-                with col2:
-                    st.markdown("**Experience:**")
-                    for exp in experience:
-                        st.write(f"- {exp}")
-                    if not experience:
-                        st.write("No experience details detected")
+                # Search query input - use alternative search if set
+                search_query = st.session_state.alt_search if st.session_state.alt_search else default_query
+                location_input = st.session_state.alt_location if st.session_state.alt_location else location
                 
-                with col3:
-                    st.markdown("**Location:**")
-                    st.write(location)
+                # Reset alternative search after using it
+                st.session_state.alt_search = None
+                st.session_state.alt_location = None
                 
-                # Generate search query
-                default_query = generate_search_query(skills, education, experience)
-            
-            # Search query input - use alternative search if set
-            search_query = st.session_state.alt_search if st.session_state.alt_search else default_query
-            location_input = st.session_state.alt_location if st.session_state.alt_location else location
-            
-            # Reset alternative search after using it
-            st.session_state.alt_search = None
-            st.session_state.alt_location = None
-            
-            st.subheader("Search Parameters")
-            search_query = st.text_input("Search Query", value=search_query)
-            location_input = st.text_input("Location", value=location_input)
-            
-            if st.button("Find Jobs"):
-                if not api_key:
-                    st.error("Please enter your SerpAPI key in the sidebar")
-                else:
-                    with st.spinner("Searching for jobs..."):
-                        try:
-                            # Clean location for search
-                            search_location = clean_location_for_search(location_input)
-                            
-                            # Log the search parameters for debugging
-                            if debug_mode:
-                                st.info(f"Searching for: '{search_query}' in '{search_location}'")
-                            
-                            # Execute the search
-                            results = search_google_jobs(query=search_query, location=search_location)
-                            
-                            # Display debug info if enabled
-                            if debug_mode and results:
-                                with st.expander("Debug: Raw Search Results"):
-                                    st.json(results)
-                            
-                            # Display results
-                            st.subheader("Job Listings")
-                            
-                            # Check for errors in the search response
-                            if "error" in results:
-                                st.error(f"Search Error: {results['error']}")
-                                st.write("Please try modifying your search query or location.")
+                st.subheader("Search Parameters")
+                search_query = st.text_input("Search Query", value=search_query)
+                location_input = st.text_input("Location", value=location_input)
+                
+                if st.button("Find Jobs"):
+                    if not api_key:
+                        st.error("Please enter your SerpAPI key in the sidebar")
+                    else:
+                        with st.spinner("Searching for jobs..."):
+                            try:
+                                # Clean location for search
+                                search_location = clean_location_for_search(location_input)
                                 
-                                # Suggest fixes for location issues
-                                if "location" in results.get("error", "").lower():
-                                    st.warning("Location format may be causing the issue.")
-                                    st.write("Try these location formats instead:")
+                                # Log the search parameters for debugging
+                                if debug_mode:
+                                    st.info(f"Searching for: '{search_query}' in '{search_location}'")
+                                
+                                # Execute the search
+                                results = search_google_jobs(query=search_query, location=search_location)
+                                
+                                # Display debug info if enabled
+                                if debug_mode and results:
+                                    with st.expander("Debug: Raw Search Results"):
+                                        st.json(results)
+                                
+                                # Display results
+                                st.subheader("Job Listings")
+                                
+                                # Check for errors in the search response
+                                if "error" in results:
+                                    st.error(f"Search Error: {results['error']}")
+                                    st.write("Please try modifying your search query or location.")
                                     
-                                    # Extract just city if location contains comma
-                                    if "," in search_location:
-                                        city = search_location.split(",")[0].strip()
-                                        state = search_location.split(",")[1].strip() if len(search_location.split(",")) > 1 else ""
+                                    # Suggest fixes for location issues
+                                    if "location" in results.get("error", "").lower():
+                                        st.warning("Location format may be causing the issue.")
+                                        st.write("Try these location formats instead:")
                                         
-                                        col1, col2, col3 = st.columns(3)
-                                        with col1:
-                                            if st.button(f"Use '{city}' only"):
-                                                st.session_state.alt_location = city
-                                                st.experimental_rerun()
-                                        with col2:
-                                            if state and st.button(f"Use '{state}' only"):
-                                                st.session_state.alt_location = state
-                                                st.experimental_rerun()
-                                        with col3:
+                                        # Extract just city if location contains comma
+                                        if "," in search_location:
+                                            city = search_location.split(",")[0].strip()
+                                            state = search_location.split(",")[1].strip() if len(search_location.split(",")) > 1 else ""
+                                            
+                                            col1, col2, col3 = st.columns(3)
+                                            with col1:
+                                                if st.button(f"Use '{city}' only"):
+                                                    st.session_state.alt_location = city
+                                                    st.experimental_rerun()
+                                            with col2:
+                                                if state and st.button(f"Use '{state}' only"):
+                                                    st.session_state.alt_location = state
+                                                    st.experimental_rerun()
+                                            with col3:
+                                                if st.button("Use 'United States'"):
+                                                    st.session_state.alt_location = "United States"
+                                                    st.experimental_rerun()
+                                        else:
                                             if st.button("Use 'United States'"):
                                                 st.session_state.alt_location = "United States"
                                                 st.experimental_rerun()
-                                    else:
-                                        if st.button("Use 'United States'"):
-                                            st.session_state.alt_location = "United States"
-                                            st.experimental_rerun()
-                            
-                            # Process the results
-                            elif "organic_results" in results and results["organic_results"]:
-                                jobs = results["organic_results"][:8]  # Top 8 results
                                 
-                                job_count = 0
-                                for i, job in enumerate(jobs, 1):
-                                    # Filter out non-job listing results
-                                    title = job.get('title', '').lower()
-                                    link = job.get('link', '').lower()
-                                    snippet = job.get('snippet', '').lower()
+                                # Process the results
+                                elif "organic_results" in results and results["organic_results"]:
+                                    jobs = results["organic_results"][:8]  # Top 8 results
                                     
-                                    # Check if result is likely a job posting (relaxed criteria)
-                                    is_job = (
-                                        'job' in title or 'career' in title or 'position' in title or
-                                        'developer' in title or 'engineer' in title or 'programmer' in title or
-                                        'linkedin.com/jobs' in link or 'indeed.com/job' in link or 
-                                        'glassdoor.com/job' in link or 'apply' in snippet
-                                    )
+                                    job_count = 0
+                                    for i, job in enumerate(jobs, 1):
+                                        # Filter out non-job listing results
+                                        title = job.get('title', '').lower()
+                                        link = job.get('link', '').lower()
+                                        snippet = job.get('snippet', '').lower()
+                                        
+                                        # Check if result is likely a job posting (relaxed criteria)
+                                        is_job = (
+                                            'job' in title or 'career' in title or 'position' in title or
+                                            'developer' in title or 'engineer' in title or 'programmer' in title or
+                                            'linkedin.com/jobs' in link or 'indeed.com/job' in link or 
+                                            'glassdoor.com/job' in link or 'apply' in snippet
+                                        )
+                                        
+                                        if is_job or debug_mode:  # Show all results in debug mode
+                                            job_count += 1
+                                            with st.container():
+                                                col1, col2 = st.columns([1, 3])
+                                                with col1:
+                                                    st.write(f"**#{job_count}**")
+                                                
+                                                with col2:
+                                                    st.write(f"**{job.get('title', 'Unknown Title')}**")
+                                                    st.write(f"Source: {job.get('source', 'Unknown')}")
+                                                    st.write(f"Description: {job.get('snippet', 'No description')[:200]}...")
+                                                    if "link" in job:
+                                                        st.write(f"[View Job Listing]({job['link']})")
+                                                
+                                                st.divider()
                                     
-                                    if is_job or debug_mode:  # Show all results in debug mode
-                                        job_count += 1
-                                        with st.container():
-                                            col1, col2 = st.columns([1, 3])
-                                            with col1:
-                                                st.write(f"**#{job_count}**")
-                                            
-                                            with col2:
+                                    if job_count == 0:
+                                        st.warning("Found search results, but none appear to be job listings. Showing all results:")
+                                        # Show all results regardless of job filtering
+                                        for i, job in enumerate(jobs, 1):
+                                            with st.container():
                                                 st.write(f"**{job.get('title', 'Unknown Title')}**")
                                                 st.write(f"Source: {job.get('source', 'Unknown')}")
                                                 st.write(f"Description: {job.get('snippet', 'No description')[:200]}...")
                                                 if "link" in job:
-                                                    st.write(f"[View Job Listing]({job['link']})")
-                                            
-                                            st.divider()
-                                
-                                if job_count == 0:
-                                    st.warning("Found search results, but none appear to be job listings. Showing all results:")
-                                    # Show all results regardless of job filtering
-                                    for i, job in enumerate(jobs, 1):
-                                        with st.container():
-                                            st.write(f"**{job.get('title', 'Unknown Title')}**")
-                                            st.write(f"Source: {job.get('source', 'Unknown')}")
-                                            st.write(f"Description: {job.get('snippet', 'No description')[:200]}...")
-                                            if "link" in job:
-                                                st.write(f"[View Link]({job['link']})")
-                                            st.divider()
-                            else:
-                                st.warning("No job listings found. Try these suggestions:")
-                                st.write("1. Simplify your search query (e.g., 'software developer' instead of using multiple languages)")
-                                st.write("2. Try a broader location (e.g., just the state name or 'United States')")
-                                st.write("3. Check different job titles (e.g., 'programmer' or 'software engineer')")
-                                
-                                # Provide alternative search buttons
-                                col1, col2, col3 = st.columns(3)
-                                with col1:
-                                    if st.button("Try 'Entry Level Developer'"):
-                                        st.session_state.alt_search = "Entry Level Developer"
-                                        st.experimental_rerun()
-                                with col2:
-                                    if st.button("Try State-wide Search"):
-                                        # Extract state if location has comma
-                                        if "," in search_location:
-                                            state = search_location.split(",")[1].strip()
-                                            st.session_state.alt_location = state
-                                        else:
+                                                    st.write(f"[View Link]({job['link']})")
+                                                st.divider()
+                                else:
+                                    st.warning("No job listings found. Try these suggestions:")
+                                    st.write("1. Simplify your search query (e.g., 'software developer' instead of using multiple languages)")
+                                    st.write("2. Try a broader location (e.g., just the state name or 'United States')")
+                                    st.write("3. Check different job titles (e.g., 'programmer' or 'software engineer')")
+                                    
+                                    # Provide alternative search buttons
+                                    col1, col2, col3 = st.columns(3)
+                                    with col1:
+                                        if st.button("Try 'Entry Level Developer'"):
+                                            st.session_state.alt_search = "Entry Level Developer"
+                                            st.experimental_rerun()
+                                    with col2:
+                                        if st.button("Try State-wide Search"):
+                                            # Extract state if location has comma
+                                            if "," in search_location:
+                                                state = search_location.split(",")[1].strip()
+                                                st.session_state.alt_location = state
+                                            else:
+                                                st.session_state.alt_location = "United States"
+                                            st.experimental_rerun()
+                                    with col3:
+                                        if st.button("Use Broader Location"):
                                             st.session_state.alt_location = "United States"
-                                        st.experimental_rerun()
-                                with col3:
-                                    if st.button("Use Broader Location"):
-                                        st.session_state.alt_location = "United States"
-                                        st.experimental_rerun()
-                        
-                        except Exception as e:
-                            st.error(f"Error during job search: {str(e)}")
-                            st.write("Please try again with a different search query or check your API key.")
+                                            st.experimental_rerun()
                             
-                            # Display traceback in debug mode
-                            if debug_mode:
-                                import traceback
-                                st.expander("Debug: Error Details").code(traceback.format_exc())
-            
-            # Clean up
-            if os.path.exists("temp_cv.pdf"):
-                os.remove("temp_cv.pdf")
+                            except Exception as e:
+                                st.error(f"Error during job search: {str(e)}")
+                                st.write("Please try again with a different search query or check your API key.")
+                                
+                                # Display traceback in debug mode
+                                if debug_mode:
+                                    import traceback
+                                    st.expander("Debug: Error Details").code(traceback.format_exc())
                 
+                # Clean up temporary file
+                if os.path.exists(temp_path):
+                    try:
+                        os.remove(temp_path)
+                    except Exception as e:
+                        if debug_mode:
+                            st.warning(f"Could not remove temporary file: {str(e)}")
+                    
+            except Exception as e:
+                st.error(f"Error processing PDF: {str(e)}")
+                
+                # Display traceback in debug mode
+                if debug_mode:
+                    import traceback
+                    st.expander("Debug: Error Details").code(traceback.format_exc())
+        
         except Exception as e:
-            st.error(f"Error processing PDF: {str(e)}")
+            st.error(f"Error handling uploaded file: {str(e)}")
+            if debug_mode:
+                import traceback
+                st.expander("Debug: File Handling Error").code(traceback.format_exc())
     
     else:
         st.info("Please upload your CV to get started")
