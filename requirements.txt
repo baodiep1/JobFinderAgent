@@ -4,6 +4,7 @@ pdfplumber==0.11.6
 nltk==3.9.1
 streamlit==1.45.0
 smolagents==1.14.0
+numpy==1.26.4
 spacy==3.7.2
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
 PyPDF2==3.0.1

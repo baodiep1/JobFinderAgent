@@ -12,8 +12,7 @@ from pathlib import Path
 import tempfile
 import logging
 import sys
-from tools.pdf_extractor import extract_text_from_pdf
-from tools.google_search import search_google_jobs
+import importlib
 
 # Configure logging
 logging.basicConfig(
@@ -37,6 +36,25 @@ nltk.data.path.append(str(nltk_data_dir))
 loading_message = st.empty()
 loading_message.info("Loading NLP models... This may take a moment.")
 
+# Force reload numpy to ensure compatibility
+st.markdown("### Setting up environment...")
+try:
+    import numpy
+    importlib.reload(numpy)
+    logger.info(f"NumPy version: {numpy.__version__}")
+    st.write(f"NumPy version: {numpy.__version__}")
+except Exception as e:
+    logger.error(f"Error reloading NumPy: {str(e)}")
+
+# Now try to import tools
+try:
+    from tools.pdf_extractor import extract_text_from_pdf
+    from tools.google_search import search_google_jobs
+    logger.info("Tools imported successfully")
+except Exception as e:
+    logger.error(f"Error importing tools: {str(e)}")
+    st.error(f"Error importing tools: {str(e)}")
+
 # Import and load SpaCy
 logger.info("About to load SpaCy model")
 try:
@@ -50,28 +68,27 @@ try:
         logger.error(f"Error loading SpaCy model: {str(e)}")
         loading_message.error(f"Error loading SpaCy model: {str(e)}")
         
-        # Add fallback options
-        try:
-            # Try finding the model in different locations
-            model_paths = spacy.util.get_model_meta("en_core_web_sm").get("shortcuts", [])
-            if model_paths:
-                logger.info(f"Trying alternative model path: {model_paths[0]}")
-                st.info(f"Trying alternative model path: {model_paths[0]}")
-                nlp = spacy.load(model_paths[0])
-                loading_message.empty()
-                logger.info("SpaCy model loaded from alternative path")
-            else:
-                logger.error("Could not find model paths")
-                raise ValueError("Could not find model paths")
-        except Exception as inner_e:
-            logger.error(f"Could not load NLP model: {str(e)}, {str(inner_e)}")
-            st.error(f"Could not load NLP model: {str(e)}, {str(inner_e)}")
-            st.error("Please contact support.")
-            st.stop()
+        # Add fallback with minimal NLP functionality
+        logger.info("Creating blank SpaCy model as fallback")
+        nlp = spacy.blank("en")
+        loading_message.warning("Using simplified language model. Some features may be limited.")
+        
 except Exception as e:
     logger.error(f"Unable to load SpaCy: {str(e)}")
     loading_message.error(f"Unable to load SpaCy: {str(e)}")
-    st.stop()  # Stop the app if SpaCy can't be loaded
+    
+    # Ultimate fallback - create a dummy NLP function to avoid halting the app
+    class DummyNLP:
+        def __call__(self, text):
+            class DummyDoc:
+                def __init__(self, text):
+                    self.text = text
+                    self.ents = []
+            return DummyDoc(text)
+    
+    nlp = DummyNLP()
+    st.warning("NLP features are unavailable. App will run with limited functionality.")
+    logger.warning("Using dummy NLP function")
 
 # Download necessary NLTK data with better error handling
 logger.info("Checking NLTK resources")
@@ -91,8 +108,11 @@ def check_requirements():
     try:
         # Check SpaCy
         import spacy
-        models = spacy.util.get_installed_models()
-        st.sidebar.success(f"✅ SpaCy installed. Models: {', '.join(models)}")
+        try:
+            models = spacy.util.get_installed_models()
+            st.sidebar.success(f"✅ SpaCy installed. Models: {', '.join(models)}")
+        except:
+            st.sidebar.warning("⚠️ SpaCy installed but couldn't list models")
         
         # Check NLTK
         import nltk
@@ -154,137 +174,109 @@ def extract_skills_from_cv(cv_text):
     # Prepare text
     cv_text_lower = cv_text.lower()
     
-    # Tokenize the text
-    tokens = word_tokenize(cv_text_lower)
-    
-    # Remove stopwords
-    stop_words = set(stopwords.words('english'))
-    filtered_tokens = [token for token in tokens if token not in stop_words and len(token) > 2]
-    
-    # Process with SpaCy for more advanced extraction
-    doc = nlp(cv_text)
-    
-    # Extract skills
+    # Extract skills - simpler algorithm with fallback options
     skills = set()
     
-    # Method 1: Direct matching with our predefined list
+    try:
+        # Tokenize the text
+        tokens = word_tokenize(cv_text_lower)
+        
+        # Remove stopwords
+        try:
+            stop_words = set(stopwords.words('english'))
+            filtered_tokens = [token for token in tokens if token not in stop_words and len(token) > 2]
+        except:
+            # Fallback if stopwords fail
+            logger.warning("Stopwords failed, using basic filtering")
+            filtered_tokens = [token for token in tokens if len(token) > 2]
+    except:
+        # Fallback if tokenization fails
+        logger.warning("Tokenization failed, using simple split")
+        filtered_tokens = [word for word in cv_text_lower.split() if len(word) > 2]
+    
+    # Direct matching with our predefined list (will work even with dummy NLP)
     for skill in technical_skills:
         if skill in cv_text_lower or any(skill == token for token in filtered_tokens):
             skills.add(skill)
     
-    # Method 2: Using SpaCy's entity recognition for additional skills
-    for ent in doc.ents:
-        if ent.label_ in ["ORG", "PRODUCT"] and len(ent.text) > 2:
-            # Check if this organization/product could be a technology or tool
-            potential_skill = ent.text.lower()
-            if potential_skill in technical_skills:
-                skills.add(potential_skill)
+    # Only try SpaCy features if we have a real NLP model
+    if not isinstance(nlp, DummyNLP):
+        try:
+            # Process with SpaCy for more advanced extraction
+            doc = nlp(cv_text)
+            
+            # Using SpaCy's entity recognition for additional skills
+            for ent in doc.ents:
+                if ent.label_ in ["ORG", "PRODUCT"] and len(ent.text) > 2:
+                    # Check if this organization/product could be a technology or tool
+                    potential_skill = ent.text.lower()
+                    if potential_skill in technical_skills:
+                        skills.add(potential_skill)
+        except Exception as e:
+            logger.warning(f"SpaCy processing failed: {str(e)}")
     
-    # Method 3: Extract multi-word technical skills like "machine learning"
+    # Extract multi-word technical skills like "machine learning"
     for skill in technical_skills:
         if " " in skill:
             if skill in cv_text_lower:
                 skills.add(skill)
     
     # Look for sections that might contain skills
-    sections = re.split(r'\n\s*\n', cv_text)
-    for section in sections:
-        section_lower = section.lower()
-        if any(header in section_lower for header in ["skill", "technical", "technology", "tools", "proficiency"]):
-            lines = section.split('\n')
-            for line in lines:
-                words = line.split()
-                for word in words:
-                    word_clean = word.lower().strip(',:;()[]{}').strip()
-                    if word_clean in technical_skills and len(word_clean) > 2:
-                        skills.add(word_clean)
+    try:
+        sections = re.split(r'\n\s*\n', cv_text)
+        for section in sections:
+            section_lower = section.lower()
+            if any(header in section_lower for header in ["skill", "technical", "technology", "tools", "proficiency"]):
+                lines = section.split('\n')
+                for line in lines:
+                    words = line.split()
+                    for word in words:
+                        word_clean = word.lower().strip(',:;()[]{}').strip()
+                        if word_clean in technical_skills and len(word_clean) > 2:
+                            skills.add(word_clean)
+    except Exception as e:
+        logger.warning(f"Section extraction failed: {str(e)}")
     
     return list(skills)
 
 def extract_location_from_cv(cv_text, nlp_model):
-    """Extract location information from CV text using NLP
-    
-    This function uses NLP to extract just the location information from resume text,
-    separating it from any personal information like names.
-    
-    Args:
-        cv_text: Text extracted from the resume
-        nlp_model: SpaCy NLP model
-        
-    Returns:
-        String containing location in optimal search format
-    """
+    """Extract location information from CV text using NLP"""
     # Default location if nothing is found
     default_location = "United States"
     
-    # Process the text with SpaCy for NER
-    doc = nlp_model(cv_text)
-    
-    # Find potential locations using SpaCy's entity recognition
-    locations = []
-    for ent in doc.ents:
-        if ent.label_ in ["GPE", "LOC"]:  # Geopolitical entity or location
-            locations.append(ent.text)
-    
-    # Look for standard location pattern "City, State" in the text
-    # This pattern matches "City, ST" format where ST is a two-letter state code
-    city_state_pattern = re.compile(r'([A-Za-z\s]+),\s*([A-Z]{2})')
-    matches = city_state_pattern.findall(cv_text)
-    
-    if matches:
-        # Found a match like "City, State" or possibly "Name City, State"
-        for match in matches:
-            before_comma, state = match
-            before_comma = before_comma.strip()
+    # Simple extraction with fallbacks
+    try:
+        # Look for standard location pattern "City, State" in the text
+        # This pattern matches "City, ST" format where ST is a two-letter state code
+        city_state_pattern = re.compile(r'([A-Za-z\s]+),\s*([A-Z]{2})')
+        matches = city_state_pattern.findall(cv_text)
+        
+        if matches:
+            # Found a match like "City, State"
+            before_comma, state = matches[0]
+            return f"{before_comma.strip()}, {state}"
+        
+        # Check if we have a real NLP model
+        if not isinstance(nlp_model, DummyNLP):
+            # Process the text with SpaCy for NER
+            doc = nlp_model(cv_text)
             
-            # Check if the part before comma has multiple words
-            words = before_comma.split()
-            if len(words) > 1:
-                # Check if some words are likely to be names by looking at capitalization
-                # and seeing if they match any person entities found by SpaCy
-                person_names = []
-                for ent in doc.ents:
-                    if ent.label_ == "PERSON":
-                        person_names.extend(ent.text.split())
-                
-                # Filter out likely names, keeping only location words
-                location_words = []
-                for word in words:
-                    # Skip words that are likely names (in the PERSON entities or match other heuristics)
-                    if word in person_names or (word[0].isupper() and len(word) <= 5 and word.lower() not in ["north", "south", "east", "west", "new"]):
-                        continue
-                    location_words.append(word)
-                
-                # If we have words remaining, they're likely the location
-                if location_words:
-                    return f"{' '.join(location_words)}, {state}"
-                else:
-                    # If all words filtered out, use the last word as city (common pattern)
-                    return f"{words[-1]}, {state}"
-            else:
-                # Just one word before comma, likely the city
-                return f"{before_comma}, {state}"
-    
-    # If we haven't returned yet, try using any locations identified by SpaCy
-    if locations:
-        return locations[0]
+            # Find potential locations using SpaCy's entity recognition
+            locations = []
+            for ent in doc.ents:
+                if ent.label_ in ["GPE", "LOC"]:  # Geopolitical entity or location
+                    locations.append(ent.text)
+            
+            if locations:
+                return locations[0]
+    except Exception as e:
+        logger.warning(f"Location extraction error: {str(e)}")
         
     # If all else fails, return default
     return default_location
 
 def clean_location_for_search(location_input):
-    """Clean up location format for optimal searching
-    
-    Takes any location string and formats it properly for search APIs.
-    Handles common issues like multiple words before comma that might
-    include personal information.
-    
-    Args:
-        location_input: Raw location string that might need cleaning
-        
-    Returns:
-        Cleaned location string suitable for search API
-    """
+    """Clean up location format for optimal searching"""
     # Handle empty case
     if not location_input:
         return "United States"
@@ -685,6 +677,15 @@ def run_streamlit_app():
     
     else:
         st.info("Please upload your CV to get started")
+
+# DummyNLP class definition for global scope
+class DummyNLP:
+    def __call__(self, text):
+        class DummyDoc:
+            def __init__(self, text):
+                self.text = text
+                self.ents = []
+        return DummyDoc(text)
 
 if __name__ == "__main__":
     try:
