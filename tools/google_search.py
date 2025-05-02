@@ -43,7 +43,6 @@ def search_google_jobs(query: str, location: str = "United States") -> dict:
         return results
     except Exception as e:
         print(f"Error in SerpAPI search: {str(e)}")
-        # Return a more detailed error message in the results
         return {
             "error": str(e),
             "query": query,
